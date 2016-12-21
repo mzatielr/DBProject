@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "id": "1107193769388712_1135793929862029",
+            "updated_time": "2016-12-11T06:30:04+0000"
+        },
+        {
+            "id": "1107193769388712_1131143933660362",
+            "message": "No place to crash overnight....not attending.thanks for the invitation",
+            "updated_time": "2016-12-07T07:54:11+0000"
+        },
+        {
+            "id": "1107193769388712_1107284812712941",
+            "message": "Tq",
+            "updated_time": "2016-11-17T11:37:31+0000"
+        },
+        {
+            "id": "1107193769388712_1107196169388472",
+            "message": "It's Christmas time here at ECA KL.\nJoin us this Christmas time to celebrate the birth of our Savior Jesus. \nBring the entire family and invite some friends.\n#mychristmas16",
+            "updated_time": "2016-11-17T09:03:56+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1107193769388712/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1479373436&__paging_token=enc_AdCICyCTzvGDbcnZCrzkCICYAMJrg09WAX8NCuNwy1Pby2gprIhTZCXrUlKNgCslAl7VmZBJLAterwyWDa8N2S3FRhC6QrVTG6wVhcPqyXcND79iwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1107193769388712/feed?since=1481437804&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCrdMC8KDWKMqqsDBm1xKSnFYmNFpatBrQvwPNyqgL8G3BFyBzKnXkujpaco7wqQaLIJNieiptFLWzxaelW7ptQiFaR7lVjUjTtQB4w1E8N3AZDZD&__previous=1"
+    }
+}

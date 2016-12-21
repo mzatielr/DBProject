@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1176423382427578_1194372807299302",
+            "message": "Obrigada pela vossa energia na noite de ontem!\nAt\u00e9 para o ano! :)",
+            "updated_time": "2016-12-17T20:59:46+0000"
+        },
+        {
+            "id": "1176423382427578_1180256732044243",
+            "message": "r e t a l h o s\n\"(...) deriva regressivamente de retalhar, e\u0301 uma parte de algo que se retalhou; um todo em pequena escala ou em quantidade; misturada de va\u0301rias coisas por va\u0301rias pessoas.\u201d",
+            "updated_time": "2016-12-06T20:27:19+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1176423382427578/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481056039&__paging_token=enc_AdAIdAwKDPsmT4ZCuZBoT1ZA40q21PzgXmGZAsF4wrquWx9ZCvUnKOM2g3DtT6jrOSVLinumFfXg5i3gOxMfZCgiMdWjW3fB1afLqBoZA3512uAdAOiPwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1176423382427578/feed?since=1482008386&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCdkn5kT5WobFIM0tjZAwVZAHUZAskevBbPBCh3hMf4TfwZBQFvZBWyOvJYA9Q6SuwFgEDULPGowfQBsZBNBrpx83wT5gVgeNWwCX1NiIgsgZCFl9ZAmQZDZD&__previous=1"
+    }
+}

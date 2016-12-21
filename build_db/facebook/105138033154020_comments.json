@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "id": "105138033154020_376442016023619",
+            "message": "3",
+            "updated_time": "2016-12-08T12:33:17+0000"
+        },
+        {
+            "id": "105138033154020_352504971750657",
+            "message": "Tenho FX HD loc kkc. F.",
+            "updated_time": "2016-10-18T14:19:20+0000"
+        },
+        {
+            "id": "105138033154020_283265708674584",
+            "message": "3",
+            "updated_time": "2016-05-17T06:35:27+0000"
+        },
+        {
+            "id": "105138033154020_252253425109146",
+            "message": "buah lenca buah duren petis weh",
+            "updated_time": "2016-03-19T05:24:21+0000"
+        },
+        {
+            "id": "105138033154020_185892135078609",
+            "message": "Bua.maga tak jatu tak mungkin bua pisang yang tunas...",
+            "updated_time": "2016-03-05T21:07:06+0000"
+        },
+        {
+            "id": "105138033154020_105138039820686",
+            "story": "Sang created an event.",
+            "updated_time": "2015-08-25T10:34:09+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/105138033154020/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1440498849&__paging_token=enc_AdDFKPCFXfDWmUWIlbeXKP3xxlNcZB9D7HfJCpZAZCp6gjKgz0udAaKAmTZBdirG6HGuF8feWfC4qC91mS8v9iuXmfsgcBlKD7bhRBufRiICC0wBRQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/105138033154020/feed?since=1481200397&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCEavn1X4X6BbFwNyZAtU3ti6BY3QveXP4l1nNO5WNPxognvT9L6Kr81QhZAnrr07wChwJPD6NfQCJ7upOxrCnJa1vnfOfLwsejjcp1tSfYQaEAZDZD&__previous=1"
+    }
+}

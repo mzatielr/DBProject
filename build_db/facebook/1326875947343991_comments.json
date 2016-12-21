@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1326875947343991_1339466839418235",
+            "message": "12\u6708\u7cbe\u5f69\u6d3b\u52d5\u9678\u7e8c\u9032\u884c\u4e2d~~  \u5225\u5fd8\u4e86\u4eca\u665a\u4f86\u53c3\u8207\uff0c\u544a\u8a34\u6211\u5011\u4f60\u5fc3\u76ee\u4e2d\u9ad8\u96c4\u7684\u6a21\u6a23\u54e6! :)\n\n12/17 Swing\u5fae\u9ad4\u9a57~ Swing InBetween~\nhttp://0rz.tw/dopjZ \n\n12/18 Christmas Swing Social Party \u8056\u8a95\u6416\u64fa\u7235\u58eb\u6d3e\u5c0d\nhttp://0rz.tw/fbbFy",
+            "updated_time": "2016-12-13T01:46:43+0000"
+        },
+        {
+            "id": "1326875947343991_1338277659537153",
+            "message": "\u665a\u4e0a\u6211\u6559\u6703\u96e2\u4e0d\u958b",
+            "updated_time": "2016-12-12T02:25:10+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1326875947343991/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481509510&__paging_token=enc_AdCNmh6QVPsZC9rBVZCHLMhIOIcAtjDhWZBBJeeuwjKfpwRdZAfRm7nYwdGcSpObUstTIO9nFpwUaPZC5hvjyTDs0Ureaa9bYuZC46WmWvAgjcACMOqQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1326875947343991/feed?since=1481593603&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAuZBzW3DfDZBkXf1YbOLrYoUfZCLAvOIguZBEfMht4G0Cwa7xlNsMYyMqHserbJuhRCtOfZAxDaVx4aQjN6e2AaGZAm3qJYBdKytoc1gEm7T8GSrBAZDZD&__previous=1"
+    }
+}

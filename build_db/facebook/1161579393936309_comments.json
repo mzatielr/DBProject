@@ -1,0 +1,48 @@
+{
+    "data": [
+        {
+            "id": "1161579393936309_1197132180381030",
+            "message": "DOMANI SERA! ULTIMISSIMI POSTI IN LISTA DISPONIBILI!",
+            "updated_time": "2016-12-17T12:16:43+0000"
+        },
+        {
+            "id": "1161579393936309_1196142240480024",
+            "message": "MANCANO POCO PIU DI 48 ORE!\nTRA POCO CHIUDIAMO LE LISTE ;)",
+            "updated_time": "2016-12-16T11:26:00+0000"
+        },
+        {
+            "id": "1161579393936309_1195231157237799",
+            "message": "- 3 GIORNI AL PARTY DI NATALE PIU'ATTESO DEL 2016!\nAFFRETTATEVI PER LE LISTE!",
+            "updated_time": "2016-12-15T11:24:54+0000"
+        },
+        {
+            "id": "1161579393936309_1194391180655130",
+            "message": "DOMENICA SERA VI ASPETTIAMO QUI! \nAFFRETTATEVI PER LE PRENOTAZIONI - POSTI QUASI ESAURITI!",
+            "updated_time": "2016-12-14T13:05:19+0000"
+        },
+        {
+            "id": "1161579393936309_1192283374199244",
+            "message": "Domenica vi aspettiamo qui!\nAFFRETTATEVI PER LE PRENOTAZIONI, CHIUDEREMO GLI ACCREDITI CON LARGHISSIMO ANTICIPO!",
+            "updated_time": "2016-12-12T09:52:48+0000"
+        },
+        {
+            "id": "1161579393936309_1170941009666814",
+            "message": "Mentre aspettiamo l'evento del 18 Dicembre (sar\u00e0 i n d i m e n t i c a b i l e ! ! ) Non dimenticate di cliccare mi piace su: \nThe Colors of Milano \nVi facciamo scoprire tutte le sfumature della nostra citt\u00e0! \nhttps://www.facebook.com/colorsmilano/",
+            "updated_time": "2016-11-23T14:23:49+0000"
+        },
+        {
+            "id": "1161579393936309_1162453940515521",
+            "message": "Domenica 18 Dicembre 2016 - Dalle ore 19.00 CATTOLICA XMAS PARTY 2016 IN PIAZZA DUOMO! Duomo21 Milano\nPer questo Cattolica Party di Natale abbiamo voluto far le cose veramente in grande! Abbiamo scelto la location pi\u00f9 suggestiva \ndella citt\u00e0 in prima fila su una delle 10 piazze pi\u00f9 famose del mondo: Piazza del Duomo! \nSar\u00e0 il P R I M O CATTOLICA Party di Natale fronte al Duomo! Iniziamo con un ricchissimo aperitivo buffet per proseguire \npoi oltre mezzanotte ballando sulla terrazza...fronte Duomo! \nL'Atmosfera magica natalizia di piazza Duomo sar\u00e0 la cornice ad un evento unico!",
+            "updated_time": "2016-11-15T09:49:13+0000"
+        },
+        {
+            "id": "1161579393936309_1161580073936241",
+            "message": "PER PARTECIPARE ALLA SERATA E'NECESSARIO INVIARE UN MESSAGGIO CON IL NOME E COGNOME DEI PARTECIPANTI AL 391 47 05 981 (Whatsapp) indicando la data (18dicembre) e l'universit\u00e0 (cattolica)",
+            "updated_time": "2016-11-14T10:42:03+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1161579393936309/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1479120123&__paging_token=enc_AdD1ZBHWqtQG4pQbttkeuD5gv0sbEv8Axh9AbP4EfVCrGOaQ2pQ4tZARaL32gRQVa2PNMVkzbMPbigoFeO1vFQz9etO0SWfTXSlbZBFFQtRZCs724gZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1161579393936309/feed?since=1481977003&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBeBHZC20hHYVy5aEZB7VMSCf1tXsW8rNZA3CgRnpql9tju9hhi84autC3IcPjY1SPcMRRBFKrdbcOB8zEZBuhJ1Hza0Yr7hG8Cgyc6p7gxPLPCFgZDZD&__previous=1"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1323363311029644_1362116913820950",
+            "message": "Um pouquinho da somzera que vai rola nesse SAN7O AFTER - P.D.E. Sandy Hemura",
+            "updated_time": "2016-12-12T12:58:18+0000"
+        },
+        {
+            "id": "1323363311029644_1323537301012245",
+            "message": "Sobre nosso ultimo SAN7O AFTER - P.D.E  SyntheticBass nos decks.",
+            "updated_time": "2016-11-07T22:27:43+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1323363311029644/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1478557663&__paging_token=enc_AdBbXYztmBoLZAsR3APhdyqBCKsZCco3VhEIYqputHKG3WNNH2DNdjwv7ph05sop4tBnto4DG9Rk2SKjEQ1kny2EbujZAixDLJcMAynuLAKdrPDRQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1323363311029644/feed?since=1481547498&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBZByCIeRhZA1wnZCuSgwQlH3HSg6cDU86othJCYz9lHX4ZAtJR58q9reKLOS6ig9XmVVtd22WPpN1cannwmZBneBSVijjbO6Lc3jNCoJ9hsrIqNEwZDZD&__previous=1"
+    }
+}

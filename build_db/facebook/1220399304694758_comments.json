@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "1220399304694758_1251419691592719",
+            "message": "Nieuwjaarke zoete",
+            "updated_time": "2016-12-16T16:36:02+0000"
+        },
+        {
+            "id": "1220399304694758_1249152831819405",
+            "message": "https://m.youtube.com/watch?v=XtHEX89D_FI\n\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb\ud83d\udc83\ud83c\udffb",
+            "updated_time": "2016-12-14T19:34:59+0000"
+        },
+        {
+            "id": "1220399304694758_1221214171279938",
+            "message": "Lauranne Van DongenAndy Bunarto Gaan we??! :D",
+            "updated_time": "2016-11-24T15:07:47+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1220399304694758/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480000067&__paging_token=enc_AdDm99jvcUEfcwRqRZCZAgozPD4q7yerKLpvzjPJMbAZC8osRn78AyJ5khmdUT6rVIU1MDp5diUNmFWgGpzsfZCAZC1plkw3NVgFUq5lHZCXk0tPystgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1220399304694758/feed?since=1481906162&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAaE2lmTNJAFaqPQGd7GbDQfZCjQiE75vUbwTq8jFnXuyRAxd3EZCwXf2MN4CiFLr5ReTEnr9qMnjUx8ladAO2BKWN7R8hNdVYzENAeYZB4INH5AZDZD&__previous=1"
+    }
+}

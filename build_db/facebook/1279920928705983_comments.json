@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1279920928705983_1358225017542240",
+            "message": "14:00\uff5e16:00\u3067\u3059\u3002\n\u30a4\u30d9\u30f3\u30c8\u7de8\u96c6\u3057\u3066\u3082\u6642\u9593\u304c\u306a\u304a\u3089\u306a\u304b\u3063\u305f\u306e\u3067\u3001\u3059\u307f\u307e\u305b\u3093\u3002\u6295\u7a3f\u3044\u305f\u3057\u307e\u3057\u305f\u3002",
+            "updated_time": "2016-12-16T14:18:03+0000"
+        },
+        {
+            "id": "1279920928705983_1347739251924150",
+            "message": "\u304a\u8a98\u3044\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\ud83d\ude47\n23\u65e5\u306f \u3042\u3044\u306b\u304f\u6298\u4e95\u5148\u751f\u30ec\u30c3\u30b9\u30f3\u3067\u3001\n\u5e74\u672b\u306b\u5411\u3051\u3066\u306e\u30ec\u30c3\u30b9\u30f3\u306b\u884c\u304f\u4e88\u5b9a\u306a\u3093\u3067\u3059\ud83d\udca8\ud83d\udca8\n\u697d\u3057\u305d\u3046\u306a\u30a4\u30d9\u30f3\u30c8 \u6b8b\u5ff5\u3067\u3059\u3002\u3002\u3002",
+            "updated_time": "2016-12-06T02:25:54+0000"
+        },
+        {
+            "id": "1279920928705983_1346847508679991",
+            "message": "\u884c\u304d\u305f\u304b\u3063\u305f\u3051\u3069\u65b0\u5c45\u306e\u3042\u308c\u3053\u308c\u3067\u884c\u3051\u306a\u304f\u3066\u6b8b\u5ff5\u3067\u3059\ud83d\ude13\u6b21\u306e\u30c1\u30e3\u30f3\u30b9\u306b\ud83d\udc95",
+            "updated_time": "2016-12-05T16:15:32+0000"
+        },
+        {
+            "id": "1279920928705983_1280985255266217",
+            "message": "\u5bae\u7530\u3055\u3093\u306e\u7d20\u6575\u306a\u30e9\u30a4\u30a2\u30fc\u3067\u3001\u4e00\u8db3\u65e9\u3044\u30af\u30ea\u30b9\u30de\u30b9\u306f\u3001\u3044\u304b\u304c\u3067\u3059\u304b\uff1f\u2728(*^^*)\n\u98df\u3079\u308b\u3068\u5e78\u305b\u306b\u306a\u308b\nHiroko Infiny\u3055\u3093\u306e\u7f8e\u5473\u3057\u3044\u30b7\u30d5\u30a9\u30f3\u30b1\u30fc\u30ad\u4ed8\u304d\ud83d\udc95\n\n\u79c1\u306e\u30e9\u30a4\u30a2\u30fc\uff01\u2728\u3068Infiny\u3055\u3093\u306e\u6b4c\uff01\ud83d\udc95\u3067\u3001\u5bae\u7530\u3055\u3093\u306e\u30e9\u30a4\u30a2\u30fc\u3092\u3069\u3093\u306a\u98a8\u306b\u76db\u308a\u3042\u3052\u3088\u3046\u304b\u3001\u3042\u308c\u3053\u308c\u4f01\u3093\u3067\u304a\u308a\u307e\u3059\u3088\ud83c\udfb5(*^^*)",
+            "updated_time": "2016-11-11T02:01:50+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1279920928705983/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1478829710&__paging_token=enc_AdDihk7sZAqquphvwKdD0mF6yRWlXg50Rj3lVKtZCKtktywldABUoYAzFjfLYchfYXyFTcITACzY0ISzZCNY5wvjkFOZBqwBmyyGKNLtohZCt1Eg1qgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1279920928705983/feed?since=1481897883&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBYlCRn9lqnZAPVB6sD4jvB1US36LnDfcAbrBY0ZC8DRpxHblDUOQTAaeIM1nB5vD9gC2W1ynmrHpd5ZCcZAygEJ6KlX4ouhJPKRZAK5YkK87a09SgZDZD&__previous=1"
+    }
+}

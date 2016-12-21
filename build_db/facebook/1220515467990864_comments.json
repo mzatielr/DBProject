@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "id": "1220515467990864_1282742891768121",
+            "message": "How much is the 6D 5N photographic trip?",
+            "updated_time": "2016-12-05T10:49:53+0000"
+        },
+        {
+            "id": "1220515467990864_1276001819108895",
+            "message": "Flight INFO\nAirAsia 203  KUL to CGK   Mar 12, 9:50 AM\nAirAsia 206  CGK to KUL   Mar 17, 7:15 PM",
+            "updated_time": "2016-12-01T13:44:54+0000"
+        },
+        {
+            "id": "1220515467990864_1221103251265419",
+            "message": "planning to visit the Masjid Agung in Jakarta~",
+            "updated_time": "2016-10-16T00:06:51+0000"
+        },
+        {
+            "id": "1220515467990864_1221134484595629",
+            "message": "\u8654\u8bda\npraying",
+            "updated_time": "2016-10-15T17:06:08+0000"
+        },
+        {
+            "id": "1220515467990864_1220640097978401",
+            "message": "\u606d\u559c\u4f60\u53c8\u8de8\u524d\u4e00\u6b65\u3002\u795d\u4f60\u4e00\u5207\u987a\u5229\u3002",
+            "updated_time": "2016-10-15T06:10:53+0000"
+        },
+        {
+            "id": "1220515467990864_1220517247990686",
+            "message": "\u8fd9\u662f\u521d\u6b65\u7b56\u5212\uff5e\n\u884c\u7a0b\u5185\u5bb9\u5728\u4fee\u6539\u4e2d\uff5e",
+            "updated_time": "2016-10-15T04:21:56+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1220515467990864/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1476505316&__paging_token=enc_AdANIh4AwlC5sWJiGwzKNZBr3gvXptMWRIbQQJ0OMypbqRICNVTrgm8MsUIhdVAge5Nra9CPTvYdOQsZC2ZACiFoJitqspeaKL0RdYlJMYpPoPBhwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1220515467990864/feed?since=1480934993&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCK27gSlJwZAUibCAPSB305xKVOHZAMXPVfnVR40S2wrWCumx7gY5n0PmxfNmXH5aKsQ4Cryg5p8iQ3ThxNWpPDYRA2ZCCa6QZB349uu5PNoCZByDwZDZD&__previous=1"
+    }
+}

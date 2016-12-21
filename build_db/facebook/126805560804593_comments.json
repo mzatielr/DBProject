@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "126805560804593_127734664045016",
+            "story": "Daily King is interested in People Can Modify The Color of Facebook.",
+            "updated_time": "2012-11-02T21:48:05+0000"
+        },
+        {
+            "id": "126805560804593_126827234135759",
+            "story": "Mikail Oliver is going to People Can Modify The Color of Facebook.",
+            "updated_time": "2012-10-30T23:44:44+0000"
+        },
+        {
+            "id": "126805560804593_126825434135939",
+            "story": "Britney Brown is going to People Can Modify The Color of Facebook.",
+            "updated_time": "2012-10-30T23:37:04+0000"
+        },
+        {
+            "id": "126805560804593_126805567471259",
+            "story": "Arion James created an event.",
+            "updated_time": "2012-10-30T22:08:12+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/126805560804593/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1351634892&__paging_token=enc_AdCkXU2w32SptzPb3qohfrq8dnSVMVIErUMZCsZBfQmxrZCSFgkncITOZCpSat1nqgB2v0AKqT4G8iZC8f4n7FO7cSPIYDYjPXdL1ZA6t9VZAlk53A7qgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/126805560804593/feed?since=1351892885&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDw4oTqDtxpb35QB2qxAYaASqTsZBngKl8DpMsSxgD5Pq3KdA5bjYwLPP9bnYAmSeSdc9z9weQk1cAzmVpwWKLhvmlZBzuf06RITGH7k3bLOZAZCQZDZD&__previous=1"
+    }
+}

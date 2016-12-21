@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "1086603314792424_1106079586178130",
+            "updated_time": "2016-11-01T15:32:28+0000"
+        },
+        {
+            "id": "1086603314792424_1091414307644658",
+            "message": "futebol 11. qual idade.",
+            "updated_time": "2016-10-28T22:33:20+0000"
+        },
+        {
+            "id": "1086603314792424_1095986587187430",
+            "message": "S\u00e3o Paulo X Ponte Preta | 2\u00b0 Tempo",
+            "story": "Joao Batista shared Revista  Atividade.'s live video to the event: Torneio de futebol da A.E. Uni\u00e3o Independente.",
+            "updated_time": "2016-10-22T20:25:41+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1086603314792424/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1477167941&__paging_token=enc_AdDZAH5AZAZCjssVZCQjZAFmPdmRyEqcnr54YwygrX19422ipHXy5ZCcFoNaRXyhkSKIOEhw3LyAtft776K4UAHnEcLWFaAFKrnwYhRr8gBZArLbX06UgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1086603314792424/feed?since=1478014348&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAdS61LWC9UokPaVnDFktXVXDG4g9EL5xMmFoypvMdNZCFZBMqdK7NN60j5ZA3uPZC7h3hkyY1FK4bOOLeYxOGiFrRus5IE3P3rWGtBMiV7OSg1mAZDZD&__previous=1"
+    }
+}
