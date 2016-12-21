@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "244469025971838_244469512638456",
+            "message": "Dances List / \u821e\u5355",
+            "updated_time": "2016-11-16T14:40:25+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/244469025971838/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1479307225&__paging_token=enc_AdBYjUx6inBtNZBvbEc2rrivjH3zG5cLNrknktYfqafVqvTwACDeNNyLyPOqm32vDZCgYEYIZA8ayFgr2UZCeWYNef4blxFDc5bHeFnK9nBeeNyeywZDZD",
+        "previous": "https://graph.facebook.com/v2.8/244469025971838/feed?since=1479307225&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBYjUx6inBtNZBvbEc2rrivjH3zG5cLNrknktYfqafVqvTwACDeNNyLyPOqm32vDZCgYEYIZA8ayFgr2UZCeWYNef4blxFDc5bHeFnK9nBeeNyeywZDZD&__previous=1"
+    }
+}

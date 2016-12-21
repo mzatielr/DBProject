@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": "339197406465227_346617922389842",
+            "message": "\u70ba\u4e86\u8b93\u66f4\u591a\u5c0f\u670b\u53cb\u53ef\u4ee5\u66f4\u958b\u5fc3\u5feb\u6a02\uff0c\u6211\u5011\u52a0\u958b\u4e0b\u5348\u5834\uff0c\u6b61\u8fce\u6709\u8208\u8da3\u52a0\u5165\u7684\u5c0f\u670b\u53cb\u4f86\u73a9\u3002\u76ee\u524d\u5df2\u7d93\u534a\u6eff\u72c0\u614b\uff5e \u8d8a\u591a\u4eba\u8d8a\u597d\u73a9\u3002\u4f46\u662f\u4e5f\u662f\u5c0f\u73ed\u5236\uff0c\u4e00\u73ed\u50c56~8\u4eba\u3002",
+            "updated_time": "2016-12-12T23:11:37+0000"
+        },
+        {
+            "id": "339197406465227_346701205714847",
+            "message": "\u76ee\u524d\u4e0b\u5348\u5834\u7684\u540d\u984d\u4e5f\u5df2\u7d93\u984d\u6eff\uff0c\u70ba\u63d0\u4f9b\u512a\u826f\u6559\u5ba4\u54c1\u8cea\uff0c\u76ee\u524d\u4e0d\u63a5\u53d7\u65b0\u7684\u5831\u540d\u3002\u8acb\u6301\u7e8c\u95dc\u6ce8\u7c89\u7d72\u9801\u7684\u6700\u65b0\u6d88\u606f\u3002\n\n\u300eFun\u73a9\u85dd\u300f\u611f\u8b1d\u60a8\u7684\u53c3\u8207\u8207\u8a8d\u540c\u3002",
+            "updated_time": "2016-12-12T05:32:47+0000"
+        },
+        {
+            "id": "339197406465227_344979659220335",
+            "message": "\u76ee\u524d\u6211\u5011\u7684\u8056\u8a95PARTY\u5df2\u7d93\u984d\u6eff\uff0c\u70ba\u63d0\u4f9b\u512a\u826f\u6559\u5ba4\u54c1\u8cea\uff0c\u76ee\u524d\u4e0d\u63a5\u53d7\u65b0\u7684\u5831\u540d\u3002\u300eFun\u73a9\u85dd\u300f\u611f\u8b1d\u60a8\u7684\u53c3\u8207\u8207\u8a8d\u540c\u3002\u671f\u5f85PARTY\u898b\u5594\u3002\n\u8acb\u6301\u7e8c\u95dc\u6ce8\u7c89\u7d72\u9801\u7684\u6700\u65b0\u6d88\u606f\u3002",
+            "updated_time": "2016-12-10T03:28:24+0000"
+        },
+        {
+            "id": "339197406465227_344195652632069",
+            "message": "\u8d95\u5feb\u6309\u4e0b\u5831\u540d\u6309\u9375\u5831\u540d\uff0c\u5373\u5c07\u984d\u6eff\u3002",
+            "updated_time": "2016-12-09T07:53:01+0000"
+        },
+        {
+            "id": "339197406465227_340078576377110",
+            "message": "\u300e\u6d3b\u52d5\u300f\u8036\u8a95\u7bc0PARTY\n\u8036\u8a95\u7bc0\u5c31\u8981\u4f86\u81e8\uff0c\u5728\u300eFun\u73a9\u85dd\u300f\u505a\u4e00\u500b\u5c6c\u65bc\u81ea\u5df1\u7684\u5275\u610f\u4f5c\u54c1\uff0c\u958b\u958b\u5fc3\u5fc3\u7684\u7e7c\u7e8c\u7b49\u5f85\u8036\u8a95\u8001\u4eba\u4f86\u9001\u79ae\u7269\u3002\n\u6211\u5011\u5728\u9019\u88e1\u7b49\u5c0f\u670b\u53cb\u5011\u4e00\u8d77\u4f86\u73a9\u5594\u3002",
+            "updated_time": "2016-12-03T13:55:53+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/339197406465227/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480773353&__paging_token=enc_AdBFCZBy4qmmnKKqIOXIsgsNPuGMhhfiMxIoZCUAwL3YamYtBmv8Tw0o6JcFxmmHHuhSBARZBRl85sSCxtpG9w1RJ7bBYko6xixBOnV0ETVKADQegZDZD",
+        "previous": "https://graph.facebook.com/v2.8/339197406465227/feed?since=1481584297&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCiDxUy414R1WDaWZAIO6pPk5oigZBVlSdyPBazAQPuedNZCq2oAthfe0mFX2clqM19Stkm3x5ZCnp6ZCJTlEZCgziTkjjst5bSL41jwqMg0B5Y9IygZDZD&__previous=1"
+    }
+}

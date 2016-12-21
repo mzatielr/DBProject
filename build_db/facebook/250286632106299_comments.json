@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "id": "250286632106299_265759593892336",
+            "updated_time": "2016-12-17T10:15:40+0000"
+        },
+        {
+            "id": "250286632106299_259893864478909",
+            "message": "Grateful for the beautiful dialogue circle we shared this evening!",
+            "updated_time": "2016-12-15T13:44:52+0000"
+        },
+        {
+            "id": "250286632106299_256373868164242",
+            "updated_time": "2016-12-14T12:55:26+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/250286632106299/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481720126&__paging_token=enc_AdCSf1oMwNDu2SSwsQJImG4mQFLaq1osIhYZBguRniGYONEo7VssftpUkzSiKK0ZBOAZA39OiAXHZBd7viouH7VnUbfqqLSfS4HMswD3VfAurLRs5wZDZD",
+        "previous": "https://graph.facebook.com/v2.8/250286632106299/feed?since=1481969740&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBqZBr0c9JR9ZCnZAXXOUFDAsmWNkqZCU858Iv5x0Mn87Q4pOYgkgS6jaGZAU3mINrVfTGyvVHItjzZBFCZABlDeLdf4ir52AdZBd3CxambGLzAwuLR8gZDZD&__previous=1"
+    }
+}

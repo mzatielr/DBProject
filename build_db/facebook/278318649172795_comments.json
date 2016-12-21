@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "278318649172795_372208589783800",
+            "message": "Miji suwe ra keto",
+            "updated_time": "2016-11-09T18:43:41+0000"
+        },
+        {
+            "id": "278318649172795_278318652506128",
+            "story": "Medina Weni Pangestu created an event.",
+            "updated_time": "2016-05-06T23:39:28+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/278318649172795/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1462577968&__paging_token=enc_AdDPKkTEeHcrGmJltUxBz9FUDJwqGbBVT2kdd2blDIdZAELCavRZCv6ZAKqqn9HPEHTjgZBZAwM1e0vZCxV52CcDr4pTIZAmEfP7GKZBmWrVzgxMrs0ZBrQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/278318649172795/feed?since=1478717021&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBCLypLFbhBMs3vhm0bSIEP78hhKjjaAscGepxWsF4zhN7VTWanJZAFYnQOCFMBa9BsuhtpUQhhqQxGGux9FiZBZCoH4CQksKAMWM20lIOt1pKqwZDZD&__previous=1"
+    }
+}

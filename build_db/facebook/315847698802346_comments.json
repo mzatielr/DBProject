@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "315847698802346_328146877572428",
+            "message": "\u30102016.12.22   X'mas   Party\u3011\n\u5fa1\u6e96\u5099\u306f\u3001\u3044\u304b\u304c\u3067\u3057\u3087\u3046\u304b\uff1f\n\u30af\u30ea\u30b9\u30de\u30b9\u30d1\u30fc\u30c6\u30a3\u30fc\u306f\u3001\u2728\u7f8e\u7363\u2728\u203c\ufe0f\n\u4eca\u5e74\u3082\u5fc5\u305a\u76db\u308a\u4e0a\u304c\u308a\u307e\u3059\u203c\ufe0f\n\u7686\u69d8\uff01\u65e9\u3081\u306e\u3054\u6765\u5834\u3092\u3001\u304a\u9858\u3044\u81f4\u3057\u307e\u3059\uff01\n\n\uff0a\uff0a\uff0a12\u670822\u65e5(\u795d\u524d\u65e5 \u6728\u66dc\u65e5) \uff0a\uff0a\uff0a\n\u300eFukuoka REVO X`mas Party at \u7f8e\u7363\u300f\n\u3010\u4f1a\u5834\u3011\u7f8e\u7363 \uff5ebijyou\uff5e\uff08\u4e2d\u6d32\uff09\n\n\u798f\u5ca1\u3067\u4e00\u756a\u30b5\u30f3\u30bf\ud83c\udf85\u304c\u96c6\u307e\u308b\u30d1\u30fc\u30c6\u30a3\u30fc\u3092\u304a\u697d\u3057\u307f\u304f\u3060\u3055\u3044\ud83c\udfb5",
+            "updated_time": "2016-12-13T12:12:13+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/315847698802346/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481631133&__paging_token=enc_AdCgzhLZCR4ZCf5Ue8ZA1iF0GYSf6drAB8HrZCPnGp58K1FR3ZBAG2oqGJycOLqMtNVsGjb4R7amuKCf0eCzfBSmdQKaZCsmFFyeq9XWlwAioQuwL9XQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/315847698802346/feed?since=1481631133&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCgzhLZCR4ZCf5Ue8ZA1iF0GYSf6drAB8HrZCPnGp58K1FR3ZBAG2oqGJycOLqMtNVsGjb4R7amuKCf0eCzfBSmdQKaZCsmFFyeq9XWlwAioQuwL9XQZDZD&__previous=1"
+    }
+}

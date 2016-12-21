@@ -1,0 +1,21 @@
+{
+    "data": [
+        {
+            "id": "250133278732870_250480698698128",
+            "updated_time": "2016-12-17T22:29:02+0000"
+        },
+        {
+            "id": "250133278732870_250138465399018",
+            "message": "\u0425\u043e-\u0445\u043e-\u0445\u043e",
+            "updated_time": "2016-12-16T17:11:19+0000"
+        },
+        {
+            "id": "250133278732870_250133605399504",
+            "updated_time": "2016-12-16T16:55:55+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/250133278732870/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481907355&__paging_token=enc_AdBfL2Q4K4frpBwiYlsBcmZBCqTWLIY8E5tZCQKEq1LCCOa62OZAxLr6hCL04QL517ckKrG7UMWtD3ZA7TYLcXWYfsbohXFJHkk3oKUHkkGoealfXAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/250133278732870/feed?since=1482013742&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCZBsGPoVepemYfMFz8w1OEihGfErzyTrZCs33LNCmsHE4zoTFEdkoAMQ0yW1a5sAssJc7FX46j2hbQEYqJCECFXZARGZAGNzDHLeUsoWbpZASfO7QZDZD&__previous=1"
+    }
+}

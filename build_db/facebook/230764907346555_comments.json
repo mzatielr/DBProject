@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "230764907346555_231163890639990",
+            "message": "\u770b\u8d77\u4f86\u597d\u591a\u8a8d\u8b58\u7684\u4eba\u90fd\u6703join",
+            "updated_time": "2016-12-07T07:49:38+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/230764907346555/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481096978&__paging_token=enc_AdAIomG72gW4IS5lw8k2JKNPF5RCTvGXWacZAPxs0JOQmlw1Ga6pTP00raqfVZCmiAXDIRCUxhykC8f0kJcMcMTutPqQ0qfDROZC8ZCZBvdLPzCHGegZDZD",
+        "previous": "https://graph.facebook.com/v2.8/230764907346555/feed?since=1481096978&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAIomG72gW4IS5lw8k2JKNPF5RCTvGXWacZAPxs0JOQmlw1Ga6pTP00raqfVZCmiAXDIRCUxhykC8f0kJcMcMTutPqQ0qfDROZC8ZCZBvdLPzCHGegZDZD&__previous=1"
+    }
+}

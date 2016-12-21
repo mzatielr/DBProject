@@ -1,0 +1,26 @@
+{
+    "data": [
+        {
+            "id": "349094985467085_349104798799437",
+            "message": "We Are Creepz' first album, released just yesterday on AMDISCS : Futures Reserve Label",
+            "updated_time": "2016-12-08T11:48:44+0000"
+        },
+        {
+            "id": "349094985467085_349104325466151",
+            "updated_time": "2016-12-08T11:47:02+0000"
+        },
+        {
+            "id": "349094985467085_349104258799491",
+            "updated_time": "2016-12-08T11:46:36+0000"
+        },
+        {
+            "id": "349094985467085_349098265466757",
+            "story": "T h e S e c r e t G a r d e n posted in S L O W D A N C E x W I N T E R W O N D E R \u2014 with Rolan Bruber and 4 others at Aethernativ.",
+            "updated_time": "2016-12-08T11:27:28+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/349094985467085/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481196448&__paging_token=enc_AdCrRuLAtEM1Uujxmq2oVHYwer5SpIwhhjtB36VjrI7gWDy1ZAGGvrofpczoVevNEDDKpRzZC9Xy5WvMEBtUrIy0Hn7ZCQ1INfZAxgbWxwOJUPO2egZDZD",
+        "previous": "https://graph.facebook.com/v2.8/349094985467085/feed?since=1481197724&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdC6I255czHogfc80ItFPAV13Ja5BqBlMwFleBwckZAJdxZAT8IVCwMd5pgh81mdqVcsTlkw9J5CKI7YvVnW5sVoWna6wUV3VraRBHT4MAPPs8igZDZD&__previous=1"
+    }
+}
