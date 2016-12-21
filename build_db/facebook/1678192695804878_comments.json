@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1678192695804878_1678324002458414",
+            "message": "Erst Alkohol, und dann hin da.",
+            "updated_time": "2016-11-30T18:17:19+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1678192695804878/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480529839&__paging_token=enc_AdAg91sd3ZBgJHmAjYAAd3XQLcwt99ptC3tiZASP0boovhljcZAD09rWBCZAx0FaXdscqrTuGqb2ZClOrT8ec8RV6UAMI0gbQQ473mDegygaNLLdAFwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1678192695804878/feed?since=1480529839&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAg91sd3ZBgJHmAjYAAd3XQLcwt99ptC3tiZASP0boovhljcZAD09rWBCZAx0FaXdscqrTuGqb2ZClOrT8ec8RV6UAMI0gbQQ473mDegygaNLLdAFwZDZD&__previous=1"
+    }
+}

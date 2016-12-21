@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1613891955579976_1614087928893712",
+            "message": "\u30aa\u30fc\u30d7\u30cb\u30f3\u30b0\u30d1\u30fc\u30c6\u30a3\u30fc\u30013\u65e5\u21d24\u65e5\u65e5\u66dc18\u6642\uff5e\u306b\u5909\u66f4\u306b\u306a\u308a\u307e\u3059\u3002\u3059\u3044\u307e\u305b\u3093\uff01",
+            "updated_time": "2016-11-28T08:20:44+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1613891955579976/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480321244&__paging_token=enc_AdA3vq8fBxmZCSJ0YLhwJFjqiF0dyoTbJKYR0gYqk7eAEd4DdZCRVC0SxMRDbwFV0ZBIcGxL5liyLN2U8vVZAGjDzKWvfDv0qxZAbKM5AFJXndHP2mwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1613891955579976/feed?since=1480321244&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdA3vq8fBxmZCSJ0YLhwJFjqiF0dyoTbJKYR0gYqk7eAEd4DdZCRVC0SxMRDbwFV0ZBIcGxL5liyLN2U8vVZAGjDzKWvfDv0qxZAbKM5AFJXndHP2mwZDZD&__previous=1"
+    }
+}

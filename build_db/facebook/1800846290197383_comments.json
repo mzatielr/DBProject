@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1800846290197383_1806070119675000",
+            "message": "Also 18ner in DOG \nSimon Kr\u00fcger Yvonne Kreutzer Silvio Kr\u00fcger Max Neff Enrico Caponi Gerd Schoch Adelina Mai Dennis Bastian Hauck habt ihr bock",
+            "updated_time": "2016-11-29T22:23:09+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1800846290197383/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480458189&__paging_token=enc_AdAFplQvUEAdLp0RrIvPzKzesaoNtO791YDjkpmTQQ6OS5ZCDyZAu4rlg9X1E4RxUKZAQ8PSANULSS3UGvbBtjvOgcKhwPSJVMklfS0DCKtlIzAQQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1800846290197383/feed?since=1480458189&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAFplQvUEAdLp0RrIvPzKzesaoNtO791YDjkpmTQQ6OS5ZCDyZAu4rlg9X1E4RxUKZAQ8PSANULSS3UGvbBtjvOgcKhwPSJVMklfS0DCKtlIzAQQZDZD&__previous=1"
+    }
+}

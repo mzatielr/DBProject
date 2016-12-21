@@ -1,0 +1,38 @@
+{
+    "data": [
+        {
+            "id": "1698835050373716_1839101629680390",
+            "message": "\u3010Happy Friday\u3011\u97f3\u6a02\u5287\u300a\u7a88\u7a95\u6dd1\u5973\u300b\u4eca\u65e5\u958b\u552e\n\u9580\u7968\u73fe\u65bc\u5404\u57ce\u5e02\u552e\u7968\u7db2\u552e\u7968\u8655\u3001\u7db2\u4e0a\u3001\u6d41\u52d5\u8cfc\u7968\u61c9\u7528\u7a0b\u5f0f\u53ca\u4fe1\u7528\u5361\u96fb\u8a71\u8cfc\u7968\u71b1\u7dda\u767c\u552e",
+            "updated_time": "2016-12-02T04:10:08+0000"
+        },
+        {
+            "id": "1698835050373716_1838594259731127",
+            "message": "\u3010\u63d0\u63d0\u4f60\u3011\u97f3\u6a02\u5287\u300a\u7a88\u7a95\u6dd1\u5973\u300b\n\u9580\u7968\u5c07\u65bc\u660e\u5929(2/12) \u5728\u5404\u57ce\u5e02\u552e\u7968\u7db2\u552e\u7968\u8655\u3001\u7db2\u4e0a\u3001\u6d41\u52d5\u8cfc\u7968\u61c9\u7528\u7a0b\u5f0f\u53ca\u4fe1\u7528\u5361\u96fb\u8a71\u8cfc\u7968\u71b1\u7dda\u767c\u552e",
+            "updated_time": "2016-12-01T10:28:24+0000"
+        },
+        {
+            "id": "1698835050373716_1836430383280848",
+            "message": "2017\u5e74\u7d93\u5178\u91cd\u6f14\u300a\u7a88\u7a95\u6dd1\u5973\u300b\uff0c2017\u5e742\u670811\u53ca18\u65e5\u30012017\u5e742\u670812\u53ca19\u65e5\uff0c\u516c\u6f144\u5834\u3002\n\u9580\u7968\u5c07\u65bc2/12(\u672c\u661f\u671f\u4e94)\u5728\u5404\u57ce\u5e02\u552e\u7968\u7db2\u552e\u7968\u8655\u3001\u7db2\u4e0a\u3001\u6d41\u52d5\u8cfc\u7968\u61c9\u7528\u7a0b\u5f0f\u53ca\u4fe1\u7528\u5361\u96fb\u8a71\u8cfc\u7968\u71b1\u7dda\u767c\u552e",
+            "updated_time": "2016-11-28T07:27:52+0000"
+        },
+        {
+            "id": "1698835050373716_1701192010138020",
+            "message": "Wowy fair lady, must see stage as I saw the MOVIE VERSION IN 1965 in LOS ANGELES, is it also A MUSICAL too?",
+            "updated_time": "2016-02-14T07:24:15+0000"
+        },
+        {
+            "id": "1698835050373716_1701192963471258",
+            "message": "SURE MY DEAREST PERRY, IF I M FINE N ALIVE SINCE I M NOW ALMOST 72, THEN I WILL TAKE ALL MY FRIENDS COME N SUPPORT U in 2017. WHY DON'T WE TALK N MENTION A BIT NEXT WEDNESDAY WHEN WE DO THE \"\u8b1b\u7537\u7684\u661f\u671f\u5929\" RTHK 2 \u7bc0\u76ee\uff1f",
+            "updated_time": "2016-02-11T13:51:05+0000"
+        },
+        {
+            "id": "1698835050373716_1698835057040382",
+            "story": "Spring-Time Stage Production added an event.",
+            "updated_time": "2016-02-05T11:16:52+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1698835050373716/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1454671012&__paging_token=enc_AdDdqdKOESaF88poKTvTaphGmxTXzmC4bF5WAm4f7twTizaK33A1uvELHDMYbDyyulnWh6ww2op2qZBE6q1PChcQBOs2fT5RMJZAKQZAhlHrDqi3AZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1698835050373716/feed?since=1480651808&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdADk5krcarcPfOU7a1K8qY8zA0OmXKLUInbqtoIW4jhf4wObtawUenDb7xphUC7vyb78HQtZBGlmWU8P9afWKUJaepLEZAut3Vp8i39CnmpbFvwZDZD&__previous=1"
+    }
+}

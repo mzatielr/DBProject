@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1782086962005267_1813350295545600",
+            "message": "\u4e38\u30ce\u5185\u7dda\u3001\u6642\u9593\u8abf\u6574\u3067\u505c\u8eca\u4e2d\u2026\u3002",
+            "updated_time": "2016-12-14T09:32:39+0000"
+        },
+        {
+            "id": "1782086962005267_1813349768878986",
+            "message": "\u5411\u304b\u3063\u3066\u304a\u308a\u307e\u3059\u3002\u697d\u3057\u307f\ud83c\udfb5",
+            "updated_time": "2016-12-14T09:29:55+0000"
+        },
+        {
+            "id": "1782086962005267_1782723318608298",
+            "message": "\uff12\u30f6\u6708\u5148\u3067\u3059\u304c\u53c2\u52a0\u3055\u305b\u3066\u3044\u305f\u3060\u304d\u307e\u3059\u3002\u697d\u3057\u307f\u306b\u3057\u3066\u307e\u3059\u3002",
+            "updated_time": "2016-10-07T12:47:54+0000"
+        },
+        {
+            "id": "1782086962005267_1782309011983062",
+            "message": "\u7f8e\u5e06\u5b50\u3055\u3093\u3000\u304a\u8a98\u3044\u3042\u308a\u304c\u3068\u3046\uff01\n\u304a\u795d\u3044\u3057\u306b\u884c\u304d\u307e\u3059\u306d\ud83c\udfb5",
+            "updated_time": "2016-10-07T01:04:01+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1782086962005267/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1475802241&__paging_token=enc_AdBru12zA9PWZBf8W29SU3bukWanOqoZA4q2dqP27cDJXDpIstYfktPvrXiQ5jPZABUGfJH0ym9yGS4jXQCvH3j7KQZABFV5JBgJv8pl3qxakMg55QZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1782086962005267/feed?since=1481707959&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCMQjcidbJxc4FGZAD5Kvu1C7yx2SYCNx0slXYPJAZCPZA3JoLxrL2ZAgfjcaxkKLDf0VZAwJ9dcddAKdUdFOdzXoidKDuzivDbZBEhIHfza7mv4xDQZDZD&__previous=1"
+    }
+}

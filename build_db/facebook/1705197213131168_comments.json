@@ -1,0 +1,41 @@
+{
+    "data": [
+        {
+            "id": "1705197213131168_1722892054695017",
+            "message": "Tillykke med udstillingen!",
+            "updated_time": "2016-12-14T10:41:23+0000"
+        },
+        {
+            "id": "1705197213131168_1719589311691958",
+            "message": "\u5728\u5eca\u65e5\u306e\u304a\u77e5\u3089\u305b\u3067\u3059\n12/10\u300112/7\u306e\u571f\u66dc\u65e5\u306b\u304a\u308a\u307e\u3059\u3002\n*facebook\u306e\u30a4\u30d9\u30f3\u30c8\u306e\u671f\u9593\u8a2d\u5b9a\u306e\u90fd\u5408\u306712/16\u307e\u3067\u306e\u958b\u50ac\u3068\u8868\u793a\u3055\u308c\u3066\u3044\u307e\u3059\u304c\u3001\u5b9f\u969b\u306f12/17\u307e\u3067\u958b\u50ac\u3057\u3066\u3044\u307e\u3059\u3002\n\n\u304a\u4f1a\u3044\u3067\u304d\u308b\u3053\u3068\u3092\u697d\u3057\u307f\u306b\u3057\u3066\u3044\u307e\u3059(^ ^)\n\n---\n\nI will be at the gallery on the 10th and the 17th Dec.  facebook doesn't allow me to set the duration long enough, but the exhibition is until the 17th Sat. \n\nI'm looking forward to see you there :)",
+            "updated_time": "2016-12-11T21:16:18+0000"
+        },
+        {
+            "id": "1705197213131168_1716202382030651",
+            "updated_time": "2016-12-03T13:39:22+0000"
+        },
+        {
+            "id": "1705197213131168_1716202105364012",
+            "updated_time": "2016-12-03T06:51:02+0000"
+        },
+        {
+            "id": "1705197213131168_1705873509730205",
+            "message": "Looks like you've made some nice stuff! Sorry to say I probably won't be able to come - if nothing unforeseen happens!\n\ud83d\ude2c\ud83d\ude09\ud83d\ude0a\n\n\u304c\u3093\u3070\u3066\u203c\ufe0f\ud83c\udf37",
+            "updated_time": "2016-11-16T03:51:39+0000"
+        },
+        {
+            "id": "1705197213131168_1705799513070938",
+            "message": "\u3046\u308f\u30fc\uff01\u65e5\u672c\u306b\u5c45\u305f\u3089\u662f\u975e\u884c\u304d\u305f\u304b\u3063\u305f\ud83d\ude2d\u5831\u544a\u305f\u306e\u3057\u307f\u306b\u3057\u3066\u3044\u308b\u306d\u266b",
+            "updated_time": "2016-11-16T03:47:15+0000"
+        },
+        {
+            "id": "1705197213131168_1705212109796345",
+            "message": "\u7d20\u6575\u306a\u4f5c\u54c1\uff01\u306f\u308b\u3061\u3083\u3093\u306e\u4eba\u67c4\u304c\u73fe\u308c\u3066\u3044\u308b\u3088\u3046\u3067\u3059\u3002\u30a6\u30a4\uff0d\u30f3\u304b\u3089\u3054\u6210\u529f\u3092\u7948\u3063\u3066\u304a\u308a\u307e\u3059\u3002",
+            "updated_time": "2016-11-14T10:13:54+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1705197213131168/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1479118434&__paging_token=enc_AdD48WPdQjmqWsfIP2FPEzwU8A1XCDeVHrKC58IgA28RIsK5kmjLXxfZCr8JYMkm20RZC0kKLHhoYH4yLl91QZAKSBUte5I0YpwkJGxUtfZBDKRNgAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1705197213131168/feed?since=1481712083&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdB6O6TSRn4ICngGrxO1r2lE7j8t9wN7pZCfaAlxZBCHBl9xu1UZCHom8dZA96fCkRgmOZCKoVTNhYvutsAmejgZAgWKwW3v5NeZAkNGRPhOqejQ7s0BAZDZD&__previous=1"
+    }
+}

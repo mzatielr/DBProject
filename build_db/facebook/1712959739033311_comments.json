@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1712959739033311_1713009822361636",
+            "message": "\u521d\u5f6b\u7d19\u3001\u53c2\u52a0\u3057\u307e\u30fc\u3059\ud83e\udd17\n\u697d\u3057\u307f\u3043\ud83c\udfb6",
+            "updated_time": "2016-12-13T13:37:19+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1712959739033311/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481636239&__paging_token=enc_AdD2xgcSB3iUEv6EZCAnzoms9czKZCN0KwRKigbiOJuoGtPYsg5sIpDZCRTroeSl6yuwejiw6EY9rYoc8a1tS0s2Ujd0Cnh806nZA8FcS6ZC0j9PZBpQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1712959739033311/feed?since=1481636239&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdD2xgcSB3iUEv6EZCAnzoms9czKZCN0KwRKigbiOJuoGtPYsg5sIpDZCRTroeSl6yuwejiw6EY9rYoc8a1tS0s2Ujd0Cnh806nZA8FcS6ZC0j9PZBpQZDZD&__previous=1"
+    }
+}

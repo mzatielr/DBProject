@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1639300113014294_1790966254514345",
+            "message": "Ronkonkomay. Ri r g f giyt?EasternWestif t,,r c fdr:'(ff.",
+            "updated_time": "2016-10-14T14:27:35+0000"
+        },
+        {
+            "id": "1639300113014294_1639300119680960",
+            "story": "Indra Anwar Maulana created an event.",
+            "updated_time": "2015-09-20T05:05:54+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1639300113014294/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1442725554&__paging_token=enc_AdDdvbo28PlukeMMkqBocg1KZCZB7VjcJwn7pduzjKNGaRZBX75uNe9nU1KVFkarqtfJUis5SWFUQYL33pIk70QAwZCYWFOMCCDTeRGZBR2szlkTZAZCwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1639300113014294/feed?since=1476455255&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDOzK7dFidcJPPS9kfzlaWb4KFDmFmUG6exRqLadprdFnu2SQcNZB5bNZAXZAI9ezWqD31I3Jkr0tM3yPcSywWtsRCfYZCAinuf1D6izGOf2CgqeAZDZD&__previous=1"
+    }
+}

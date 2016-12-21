@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "1715231388793067_1719381565044716",
+            "message": "hi what's up",
+            "updated_time": "2016-12-15T11:59:24+0000"
+        },
+        {
+            "id": "1715231388793067_1718952941754245",
+            "message": "Naujieji artyn - naujienos geryn! Prie grojan\u010di\u0173j\u0173 prisijungia gerai \u017einomas veik\u0117jas narcizas Titas Motuzas. Pa\u017ead\u0117jo ger\u0105 Indie/smalin\u012f set\u0105. \u010cia va nesenai taip Anna Mesh\u0105 Kaune i\u0161ne\u0161\u0117. Jau\u010diam, kad per naujus bus dar stipriau!",
+            "updated_time": "2016-12-14T18:36:26+0000"
+        },
+        {
+            "id": "1715231388793067_1718413568474849",
+            "message": "Kur \u010dia galima staliuk\u0105 rezervuot?",
+            "updated_time": "2016-12-14T10:09:13+0000"
+        },
+        {
+            "id": "1715231388793067_1715772268738979",
+            "message": "Negana to kad jau per kaledas nuodemiu pridarysi tai cia dar viena toki sove!!!!!\nNu ka....naujakas baisus nusmato:Ddd",
+            "updated_time": "2016-12-09T16:37:56+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1715231388793067/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481301476&__paging_token=enc_AdB4Vh1HiLeTZAByB2YETo5XtFNTShErAqZAsROeyMn8UpBPmKbVeXT25D2w8HHROX4MT9hCOzzIFEda01medO4S6ihvkW1YyU5ref1wPSV0nhSAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1715231388793067/feed?since=1481803164&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBsBv4gybWgWojpMV1d9ZBbpIKzZBoyXw8TPXk1WFab3EYOwbtKN2SfqmNxadYs9DZANau1wdknlvWggSbxzMZCsgRSzZB1uZCFCFWhL3X57ZCruaIJwZDZD&__previous=1"
+    }
+}

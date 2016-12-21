@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1646983372266993_1647401898891807",
+            "message": "Sorry, I will be in LA visiting my daughter",
+            "updated_time": "2016-12-11T06:39:01+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1646983372266993/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481438341&__paging_token=enc_AdDX2XFZACiU9dF24tUIPNJwFZAZAzb5bYRKZCTVUeYOxVxN2RJ34LMDAaxZBDqMFNvALaBtWZBbrFrOM6uW6BQZB7GgjkYtJfAQLWl6yjU9cnLLwTGXwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1646983372266993/feed?since=1481438341&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDX2XFZACiU9dF24tUIPNJwFZAZAzb5bYRKZCTVUeYOxVxN2RJ34LMDAaxZBDqMFNvALaBtWZBbrFrOM6uW6BQZB7GgjkYtJfAQLWl6yjU9cnLLwTGXwZDZD&__previous=1"
+    }
+}

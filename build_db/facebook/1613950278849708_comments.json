@@ -1,0 +1,37 @@
+{
+    "data": [
+        {
+            "id": "1613950278849708_1839723309605736",
+            "message": "Q u e.  l i n d a.  P a r e j a",
+            "updated_time": "2016-12-11T20:02:30+0000"
+        },
+        {
+            "id": "1613950278849708_1836555843255816",
+            "message": "Q U A L I D A D E",
+            "updated_time": "2016-11-25T23:48:49+0000"
+        },
+        {
+            "id": "1613950278849708_1826286487616085",
+            "updated_time": "2016-11-05T07:13:23+0000"
+        },
+        {
+            "id": "1613950278849708_1785686928342708",
+            "message": "F O C U S",
+            "updated_time": "2016-08-26T03:12:41+0000"
+        },
+        {
+            "id": "1613950278849708_1613950538849682",
+            "message": "<b><fg=b0ff0000\n\u24b6 \u24b7 \u24b8 \u24b9 \u24ba \u24bb \u24bc \u24bd \u24be \u24bf \u24c0 \u24c1 \u24c2 \u24c3 \u24c4 \u24c5 \u24c6 \u24c7 \u24c8 \u24c9 \u24ca \u24cb \u24cc \u24cd \u24ce \u24cf\n<b><fg=b0ff0000>\n\uff21 \uff22 \uff23 \uff24 \uff25 \uff26 \uff27 \uff28 \uff29 \uff2a \uff2b \uff2c \uff2d \uff2e \uff2f \uff30 \uff31 \uff32 \uff33 \uff34 \uff35 \uff36 \uff37 \uff38 \uff39 \uff3a",
+            "updated_time": "2016-08-24T07:02:54+0000"
+        },
+        {
+            "id": "1613950278849708_1613950282183041",
+            "story": "Muhammad Awais created an event.",
+            "updated_time": "2015-04-25T05:54:35+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1613950278849708/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1429941275&__paging_token=enc_AdC5XxwWUJFZAsnW50kMPO73tNfIkLYZASJ6Mv5QFLeAAjeCmRDyay6yJGjBrFtl4ZChZA4Rg4VxoT0ZBEZCbJyQ0vVVShCrQba3HQ1bHBAzWg2rPnwwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1613950278849708/feed?since=1481486550&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBc0NQZB5hMFYnmB1MO7hw6RH0Ln3IM7Byfc46OjnNASpJZBpmAC16FdpZCPbCQdkZBKWDwX1nne2qYS1xlFnODrxYVaY8qcsbZBBSuV7shdC4oHvgZDZD&__previous=1"
+    }
+}

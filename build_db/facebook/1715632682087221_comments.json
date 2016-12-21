@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1715632682087221_1724882087828947",
+            "message": "\u3010TIME TABLE\u3011\n12:00-01:00 coffa\n01:00-02:00 Aya\n02:00-03:20 KAORU INOUE\n03:20-04:10 YMASA\n04:10-05:00 ASSIGN",
+            "updated_time": "2016-12-17T13:57:21+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1715632682087221/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481983041&__paging_token=enc_AdC9nCqfKoIU7pIpmZAn7zNTfYCO6bqaVmf45ny5oOYia9qwFIIDty8H3V4AzE398czA0LzXvqV4L70o2WN77gHk4SARpAtsq86GGK1NpFzINUQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1715632682087221/feed?since=1481983041&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdC9nCqfKoIU7pIpmZAn7zNTfYCO6bqaVmf45ny5oOYia9qwFIIDty8H3V4AzE398czA0LzXvqV4L70o2WN77gHk4SARpAtsq86GGK1NpFzINUQZDZD&__previous=1"
+    }
+}

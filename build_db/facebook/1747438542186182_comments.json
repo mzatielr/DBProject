@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1747438542186182_1747438642186172",
+            "message": "https://vimeo.com/185483767",
+            "updated_time": "2016-10-14T16:21:00+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1747438542186182/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1476462060&__paging_token=enc_AdARt8AEzcoxnUkdmjEkrIBoH2WMZBtxydPDF9Y3UEd4rkDo4vgTZB1jNUiBbP0saCFjZA12U7tJl4VEUk6Bdi5OHbW1OfPD1ZCP5MoBCnR4exy1RAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1747438542186182/feed?since=1476462060&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdARt8AEzcoxnUkdmjEkrIBoH2WMZBtxydPDF9Y3UEd4rkDo4vgTZB1jNUiBbP0saCFjZA12U7tJl4VEUk6Bdi5OHbW1OfPD1ZCP5MoBCnR4exy1RAZDZD&__previous=1"
+    }
+}
