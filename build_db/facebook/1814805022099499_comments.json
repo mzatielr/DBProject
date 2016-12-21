@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "id": "1814805022099499_1819613184952016",
+            "message": "Absolutes muss! (;",
+            "story": "Sabrina Mayer shared her event to the event: W E I D E L A N D im Alcazar.",
+            "updated_time": "2016-12-08T11:30:54+0000"
+        },
+        {
+            "id": "1814805022099499_1814941405419194",
+            "message": "#technosp\u00e4tzlee",
+            "updated_time": "2016-11-29T08:22:59+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1814805022099499/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480407779&__paging_token=enc_AdDy5w1RGiqOwODT7KwUr8LbuywqItx5WOiNONTHPQum9YKUQ0yNCeSHhvuTxXEq1ZArgWJ912TVj4ZBfw5dz90bM6gRQPT3jGpumLnzWMazMGegZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1814805022099499/feed?since=1481196654&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDWoQ73PlMrOTAZCAQNmJUHu8VTEYZCOhwIFehBi89rVoH4tJctsExb569nnTqZB4fVN4JaGLnV8LZBGRClX1aIaXuUcbpuKo313e3akj7G7Bkc3QZDZD&__previous=1"
+    }
+}

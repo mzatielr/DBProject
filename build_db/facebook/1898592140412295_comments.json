@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1898592140412295_1899653130306196",
+            "message": "Vi s\u00f8ger st\u00f8tte! \n\nVi er kun 15.000,- fra m\u00e5let!\n\nS\u00e5 hvis du har lyst til at donere et par kroner til vores afgangsudstilling, s\u00e5 vil vi blive meget taknemmelige <3",
+            "updated_time": "2016-12-06T17:30:19+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1898592140412295/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481045419&__paging_token=enc_AdD2WZCsefMkZCQw5nyD0ctdUr2dt2UUUqApYsv7ZB8TPZCrGMILHUlstdUTkXOjWFKnqDxBoNOdxBX6vsJWaxmeexSI0q2coZBaUZCzBfm8PlgCeV0wZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1898592140412295/feed?since=1481045419&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdD2WZCsefMkZCQw5nyD0ctdUr2dt2UUUqApYsv7ZB8TPZCrGMILHUlstdUTkXOjWFKnqDxBoNOdxBX6vsJWaxmeexSI0q2coZBaUZCzBfm8PlgCeV0wZDZD&__previous=1"
+    }
+}

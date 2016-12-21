@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "id": "1818166308464163_1833659690248158",
+            "message": "Trasforma un libro pop-up in un vero e proprio teatro animato con Apparati Effimeri\n\nISCRIVITI \u261e www.fruitexhibition.com/labs",
+            "updated_time": "2016-12-13T18:21:11+0000"
+        },
+        {
+            "id": "1818166308464163_1829685737312220",
+            "message": "Presentazione libro:\nComune a tutti \u00e8 sognare - un libro di Emilio Fantin\n\nGioved\u00ec 15 dicembre / 13.00 - 15.00\nAccademia di belle arti di Bologna - AULA I2 - 208",
+            "story": "Fruit Exhibition shared their event to the event: W O R K S H O P list Fruit Exhibition 5.",
+            "updated_time": "2016-12-07T09:29:00+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1818166308464163/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481102940&__paging_token=enc_AdAuJZCdpGscGZBuQaZCMAwyCyEQWZBHUOE0Fa4WK6Mhkh9ZCpwLmeTQho6uui4hPXtBuc4OYFwNAQx4wZCChgqWuOcRBcpIzr3LwYlwKX3OhAHCqbuAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1818166308464163/feed?since=1481653271&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdB6NZBB4RqfeK4zOv9MQZApPsFwQRQACEfF3ZCepI17e5DxVcqwRySZBSAHOJyg3eIi2dOi97D1I9chDSYMXcgYcKYyNkBFzTaAs8ZCjWxv2JyruuAZDZD&__previous=1"
+    }
+}
