@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "945329055487799_945329062154465",
+            "story": "FinOe Eank TerLupakan created an event.",
+            "updated_time": "2015-07-29T15:52:23+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/945329055487799/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1438185143&__paging_token=enc_AdD1XdKIZBNHl8l7Wx9aU7w8fgPZB2IGU5jTvethHv2QDRBtNq76Ge0SZCZBEghmH5sH08Lkeo1qZC3ZCccsZBWCNCv5h3dZCSJBVhJ1kjnUxpHmBIhMOQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/945329055487799/feed?since=1438185143&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdD1XdKIZBNHl8l7Wx9aU7w8fgPZB2IGU5jTvethHv2QDRBtNq76Ge0SZCZBEghmH5sH08Lkeo1qZC3ZCccsZBWCNCv5h3dZCSJBVhJ1kjnUxpHmBIhMOQZDZD&__previous=1"
+    }
+}

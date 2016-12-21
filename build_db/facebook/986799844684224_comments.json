@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "986799844684224_986800031350872",
+            "story": "Friends Like These Season 12 updated the event photo in Invite your 50 friends to join this event and win R50 airtime+500mb of data!",
+            "updated_time": "2016-12-17T13:00:08+0000"
+        },
+        {
+            "id": "986799844684224_986799851350890",
+            "story": "Friends Like These Season 12 added an event.",
+            "updated_time": "2016-10-23T18:05:56+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/986799844684224/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1477245956&__paging_token=enc_AdDH1vocnOyXhPWqzOuZAdE8TsHvhua3vDeLO4ttovhxcNAZC0ZA8wPKhp8MeW8m95SqwNhTnTQ9Lyrd4iv4lmEFK3kOaZC2uuPKFe8bGHQIh858nAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/986799844684224/feed?since=1481979608&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAZBwxBK12o6VHOMIZBWG9r8TX373ids27X6dZAquFWN5wZBM3EogAZCAjZABFlxHZC9VTtTBQ1oCUuZAMb0kWtKYBZBCwNZBg4W7tOJJx8fIhsIOZAW0EeQZDZD&__previous=1"
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "data": [
+        {
+            "id": "786276398184141_904666259678487",
+            "message": "Hi everybody,\nunfortunatelly we have to cancel this year Bohemiae Rosa in the Golden mountains because of low number of participants.\n\nIf you are interested you can join Body/Landscape with Frank van de Ven on stunning Aran Islands (Ireland), 13-18 September 2016: \nhttps://issuu.com/nvbes/docs/b_l_inish_oirr_final\n\nNext Bohemiae Rosa will take place in an area of the Morava River, 25-31 August 2017:\nhttp://bohemiaerosa.org/brosa/2017_golden_mountains.htm\n\nYou are cordially welcome.",
+            "updated_time": "2016-08-23T07:31:11+0000"
+        },
+        {
+            "id": "786276398184141_883497971795316",
+            "message": "from Bohemiae Rosa history",
+            "updated_time": "2016-07-20T08:34:01+0000"
+        },
+        {
+            "id": "786276398184141_863753213769792",
+            "updated_time": "2016-06-17T11:19:05+0000"
+        },
+        {
+            "id": "786276398184141_863710880440692",
+            "updated_time": "2016-06-17T09:42:04+0000"
+        },
+        {
+            "id": "786276398184141_863710797107367",
+            "story": "Kate\u0159ina Bilejov\u00e1 shared Bohemiae Rosa's photo to the event: Bohemiae Rosa 2017 // S i t e B o d y E x p l o r a t i o n.",
+            "updated_time": "2016-06-17T09:41:25+0000"
+        },
+        {
+            "id": "786276398184141_786276404850807",
+            "story": "Bohemiae Rosa added an event.",
+            "updated_time": "2016-02-04T13:28:46+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/786276398184141/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1454592526&__paging_token=enc_AdCSBFwBG0S73z0Wvrsmpe1nTietlVKl4X2SQNJQMjji7sJhFZCJvmoXT6aDuTJz6dOKrT9SPVsjtOFvMdWr7yLspmRPYNoHMqZC0rmA9Drm2gtAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/786276398184141/feed?since=1471937471&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCiZC8HvNnSq4PXlZBud4LVPfoliZCHGj1oS5dzM0aBiuRhoTw4AanE7YV18cNeiNPaToNYJ51XCls99DEIvXU2w93KcOdS0S6exy00UHYgKvETwZDZD&__previous=1"
+    }
+}

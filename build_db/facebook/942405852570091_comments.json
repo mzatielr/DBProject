@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "942405852570091_960313367446006",
+            "message": "We're delighted to announce  that S\u00cdOMHA will be opening on Wednesday night! She has the most beautiful voice. \n\nDon't forget to grab your student tickets for 15\u20ac. Follow the steps on this event! #HappyHolidays",
+            "updated_time": "2016-12-16T14:10:03+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/942405852570091/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481897403&__paging_token=enc_AdCTpbavYk5XCQrSvodEdZCrhl5dIoRs5M5wJJECZATvMU6HXWzhmrH9B4RfgD93alrHTPgH2xXeZBZCrZBKw9lOUq4ySnm2Y4kZAlBZBdvsrBAXkv3xwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/942405852570091/feed?since=1481897403&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCTpbavYk5XCQrSvodEdZCrhl5dIoRs5M5wJJECZATvMU6HXWzhmrH9B4RfgD93alrHTPgH2xXeZBZCrZBKw9lOUq4ySnm2Y4kZAlBZBdvsrBAXkv3xwZDZD&__previous=1"
+    }
+}

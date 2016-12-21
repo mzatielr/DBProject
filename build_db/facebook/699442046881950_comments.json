@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "699442046881950_699458280213660",
+            "message": "Who'll be under our Spotlight? Come on Feb 11, 2017 to see. Save the date! \n\n#SPOTLIGHT #BRIGHTERBEACON #TEASER",
+            "updated_time": "2016-12-06T15:21:14+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/699442046881950/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481037674&__paging_token=enc_AdDmsQkzzroNhylh9kZCzUMpoAN8kif9jWPKiSnRoX5jAVyz9INwIlihYCWODQ3Px8tmZCzj6LcNUN7jAFAi7swi2YWpFoUyvNebBOoohu25SpvQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/699442046881950/feed?since=1481037674&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDmsQkzzroNhylh9kZCzUMpoAN8kif9jWPKiSnRoX5jAVyz9INwIlihYCWODQ3Px8tmZCzj6LcNUN7jAFAi7swi2YWpFoUyvNebBOoohu25SpvQZDZD&__previous=1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "740192536128122_740194782794564",
+            "message": "\u2660 \u2663 \u2666 MENU' PER LA CENA \u2660 \u2663 \u2666\nAPERITIVO DI BENVENUTO:\n\u27b3Prosecco e Bellini\n\u27b3Snack misti \n\u27b3Fritti espressi\nANTIPASTI MISTI DI TERRA E MARE:\n\u27b3Assortimento di sushi, hosomaki, nigiri \n\u27b3Tempura di verdure\n\u27b3Abbinamento di salumi e formaggi nostrani serviti con miele aromatico e mostarda di frutta \n\u27b3Tortino di ricotta caramellata al forno\n\u27b3Involtini di melanzane con verdura e formaggio \n\u27b3Bruschette miste in crema di olive e con pomodorini e pesto di basilico fresco\n\u27b3Zuppa Toscana con crostini di pane dorati\n\u27b3Abbraccio di polpo e patate su letto di rucola selvatica\n\u27b3Tartare di salmone al profumo di menta e arancia\nPRIMI:\n\u27b3Risotto al rag\u00f9 di polpo e prezzemolo riccio\n\u27b3Mezzi paccheri di Gragnano \n\u27b3con zucchine, petali di speck del trentino e fiori di zucca a Belvedere\nSECONDO:\n\u27b3Arrosto di vitella alle mele con uvetta e pinoli\nCONTORNI:\n\u27b3Patate al rosmarino\n\u27b3Insalatina verde mista con julienne di ortaggi freschi\nDESSERT IN FINGER FOOD:\n\u27b3Panna cotta ai frutti di bosco\n\u27b3Creme caramel al profumo di Saronno\n\u27b3Mousse al cioccolato con scaglie di puro fondente\nSERVIZIO BAR:\n\u27b3Acqua minerale, vino bianco e vino rosso\n\u27b3Caff\u00e8\nBRINDISI DI MEZZANOTTE\n\ninfo 3926205604-3463207485",
+            "updated_time": "2016-12-17T14:09:55+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/740192536128122/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481983795&__paging_token=enc_AdCLZAY5poMp3IwPRagDtjSGgk6B2ZAAtS7DFNc88FFpluP16ZCzf3dwQOFdf2xZAYW7LJzSreNtaVL6ayuhDKtjanMr6UX5HpcwoEVqNLQ5W8cnxgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/740192536128122/feed?since=1481983795&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCLZAY5poMp3IwPRagDtjSGgk6B2ZAAtS7DFNc88FFpluP16ZCzf3dwQOFdf2xZAYW7LJzSreNtaVL6ayuhDKtjanMr6UX5HpcwoEVqNLQ5W8cnxgZDZD&__previous=1"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "984636891640617_997483207022652",
+            "message": "Questo \u00e8 il Dome di Firenze, location dove abbiamo deciso di inaugurare questo ambizioso progetto chiamato Clarice.\n\nVi aspettiamo..",
+            "updated_time": "2016-12-16T09:27:33+0000"
+        },
+        {
+            "id": "984636891640617_996074690496837",
+            "message": "Questa sera saremo da Strizzi Garden.\nPassate a ritirare il vostro braccialetto.\n\nGianmarco: +39 333 2626 846 (whatsapp sempre disponibile)\nTommaso: +39 331 91 77 176 (whatsapp sempre disponibile)",
+            "updated_time": "2016-12-14T11:44:50+0000"
+        },
+        {
+            "id": "984636891640617_991516884285951",
+            "message": "C L A R I C E / / G I R L S",
+            "updated_time": "2016-12-09T15:14:02+0000"
+        },
+        {
+            "id": "984636891640617_989066061197700",
+            "message": "Clarice is charm.\n\nTicket available : 12 \u20ac w/ drink \n\nInfo and Ticket :\nGianmarco : +39 333 2626 846\nTommaso: +39 331 91 77 176",
+            "updated_time": "2016-12-06T17:56:01+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/984636891640617/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481046961&__paging_token=enc_AdBNSHRP7ibn1Bn5TdojojWiXn4H7qF2Vva3izdZBRZCuokp3hNWdgZAKICqC7R5h5gzE7pHK3ZCDWObSOJ7pm6OUHc5ccBQczhmAuZBA5RuCfiss1AZDZD",
+        "previous": "https://graph.facebook.com/v2.8/984636891640617/feed?since=1481880453&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdB3GSPucx1HCVvtlSNE1RjsOZBQOiJRkDRJ8RlFY8ZCDNqABelOHpaMTqxMrAkCt0IgxISZCQ8laOZCPpNx28Ee8tZAUDbTphzZBd2DnJjvZAOtlmRzwZDZD&__previous=1"
+    }
+}

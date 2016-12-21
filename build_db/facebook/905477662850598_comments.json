@@ -1,0 +1,27 @@
+{
+    "data": [
+        {
+            "id": "905477662850598_1062745507123812",
+            "message": "Mn",
+            "updated_time": "2016-04-21T08:29:47+0000"
+        },
+        {
+            "id": "905477662850598_1039589649439398",
+            "updated_time": "2016-03-20T01:13:55+0000"
+        },
+        {
+            "id": "905477662850598_1039588799439483",
+            "message": "fr\u00e1n\u0107isco",
+            "updated_time": "2016-03-20T01:11:17+0000"
+        },
+        {
+            "id": "905477662850598_905477666183931",
+            "story": "Indra Anwar Maulana created an event.",
+            "updated_time": "2015-08-01T14:56:10+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/905477662850598/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1438440970&__paging_token=enc_AdCGfoWR9Aaw2vhlqN46SYsohKFh0xn59mHaZAtsqHbqLRZBXSa1aSUrh2E2LH4hqBdaExVk7YJ7eZBKV6Q0zXmUJZAIYgtRLKQXPDyVge63rzHnyQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/905477662850598/feed?since=1461227387&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCkB40zMG6yzY7wZBnKRGmGXu15aXvFH4dna4noLIlAJwfYr1EM3ZCFEPulZAAdVrKY3ZBZClCQFi01EknnUW2dnWpquSKZCZB1LrreCLRIsXEE1ZAZBHAZDZD&__previous=1"
+    }
+}
