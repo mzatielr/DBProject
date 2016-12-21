@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "648123028698285_652950551548866",
+            "message": "Omg so excited for the January sale!! Love all hr accessories products! Such good quality!\ud83d\udc98\ud83d\udc98",
+            "updated_time": "2016-12-01T20:46:58+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/648123028698285/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480625218&__paging_token=enc_AdC5io03FMW7CZANdaEwjJ6UiuZCrUvRbXsGBJcZCrKiv8pSCchjZBdfgLf19pGKgZAZBFf2DhxaGOt337TEMfI4E09LZCZAyDCXu5wK0wDXS7DznYvIsgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/648123028698285/feed?since=1480625218&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdC5io03FMW7CZANdaEwjJ6UiuZCrUvRbXsGBJcZCrKiv8pSCchjZBdfgLf19pGKgZAZBFf2DhxaGOt337TEMfI4E09LZCZAyDCXu5wK0wDXS7DznYvIsgZDZD&__previous=1"
+    }
+}

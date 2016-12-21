@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "372950399703962_382054275460241",
+            "message": "\u6b8b\u5ff5\u3067\u3059\u300119\u65e5\u304b\u3089\u53c2\u308a\u307e\u3059\u3002\u6b21\u306e\u6a5f\u4f1a\u306b\u306f\u30ae\u30e3\u30e9\u30ea\u30fc\u306b\u5bc4\u3089\u305b\u3066\u3044\u305f\u3060\u304d\u307e\u3059\u3002",
+            "updated_time": "2016-12-11T16:03:22+0000"
+        },
+        {
+            "id": "372950399703962_381022622230073",
+            "message": "\u6b21\u3005\u3068\u51c4\u3044\u306d\uff01\u5fdc\u63f4\u3057\u3066\u3044\u307e\u3059\u3002",
+            "updated_time": "2016-12-10T03:58:24+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/372950399703962/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481342304&__paging_token=enc_AdDNzZBWIuulesrfNNtK6FX1iquhXyZBrQboEDtnFfjZCZARClqpFfHULIpN2Qf9I2Gf1GYpkWZCh5BEf7j4C6xaZBTpDaTZCOM1deLLfXQxwwWBbOlZCgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/372950399703962/feed?since=1481472202&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdB2zGd2K3SZCF8VBQhjZAHznScT3bhgQCtgJrjLA6rALSwW7Imo9xJBZCbzXLvMuuWMT13epwvN8mSg7tXDxvL0KHi9BfjAzCegyMkVKFgGu4ZARQZDZD&__previous=1"
+    }
+}

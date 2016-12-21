@@ -1,0 +1,43 @@
+{
+    "data": [
+        {
+            "id": "372766926448183_384859531905589",
+            "message": "Riprendiamo da mercoled\u00ec...",
+            "story": "Francesco Samperi shared MA Catania's event to the event: Mer 21 Dic \u8859 MaSushi \u8859 L'aperitivo del mercoled\u00ec at MA.",
+            "updated_time": "2016-12-12T09:48:15+0000"
+        },
+        {
+            "id": "372766926448183_383356598722549",
+            "message": "2\u00b0 appuntamento insieme a Scie in Cortile",
+            "updated_time": "2016-12-10T14:08:38+0000"
+        },
+        {
+            "id": "372766926448183_381846045540271",
+            "message": "Siete caldi?",
+            "updated_time": "2016-12-08T18:07:06+0000"
+        },
+        {
+            "id": "372766926448183_381814218876787",
+            "message": "Questa sera ore 20,00 al MA, aperitivo Masushi. Ingresso Free!!",
+            "updated_time": "2016-12-08T16:52:59+0000"
+        },
+        {
+            "id": "372766926448183_380823102309232",
+            "message": "COMUNICAZIONE DI SERVIZIO: causa mal tempo l'aperitivo del mercoled\u00ec \"MaSushi\" \u00e8 spostato a domani.",
+            "updated_time": "2016-12-07T11:26:17+0000"
+        },
+        {
+            "id": "372766926448183_380175475707328",
+            "message": "Comunque 'MaSushi' \u00e8 di una finezza ... \ud83d\ude02\ud83d\ude02\ud83d\ude02",
+            "updated_time": "2016-12-06T13:30:37+0000"
+        },
+        {
+            "id": "372766926448183_379331882458354",
+            "updated_time": "2016-12-05T12:40:00+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/372766926448183/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480941600&__paging_token=enc_AdBi8ZArXPDOCuyBEuCMirdZA2SNa72YkyJiBaGcfgdHgwTtSPgCfYVgVRjoT1MVHJgkum1fzI7jYgE1aFZBkZBT5PQROZACFM68tKcDCNyfd0UpVlQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/372766926448183/feed?since=1481536095&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDqkNbZB5KlxmtfZB5T5XdEGVh6Ij4V4S9ryiir6rAZBwqZBwIJAZA1yaywhATHVBk4PnZCjH9ucJT5iwmqy5RLI8ssTZBlS2ri5NITKWVxVSIMLTaUAZDZD&__previous=1"
+    }
+}

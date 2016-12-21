@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "682071818605611_682071925272267",
+            "message": "G",
+            "updated_time": "2015-05-09T08:50:26+0000"
+        },
+        {
+            "id": "682071818605611_682071821938944",
+            "story": "Muhammad Awais created an event.",
+            "updated_time": "2015-05-09T08:49:32+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/682071818605611/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1431161372&__paging_token=enc_AdBjjPwVHQdHOAKj0wlrN4hyI7gijnXcC9zgF2OjGtWxMRaWcFJWyTKwvZCmQSqZCCHzxDHYU9nOrj3OWhXZBTXj7FtHqYL3FdAxcO5mgrumsLclQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/682071818605611/feed?since=1431161426&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDNgZBhMECEpMYcQPYNgZBrDcOPlaq5l3YH1I9yeYZAmP7dsGadTTnbZB3pC6XZCKKMSAQGQPKJnQ2Pvi4vkEHcR0wNjBCzypPOFfTIGjHFhoa69LQZDZD&__previous=1"
+    }
+}

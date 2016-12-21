@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "549412955226337_651636968337268",
+            "message": "Gulamfareed",
+            "updated_time": "2016-08-31T15:10:42+0000"
+        },
+        {
+            "id": "549412955226337_586735258160773",
+            "message": "Ria",
+            "updated_time": "2016-08-11T15:26:20+0000"
+        },
+        {
+            "id": "549412955226337_549412961893003",
+            "story": "Rama created an event.",
+            "updated_time": "2016-01-09T09:25:33+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/549412955226337/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1452331533&__paging_token=enc_AdCmzzSgn1AlV4kBcxXOnHLzsWyoLB33yySNZBgczZCPAZB4suZCjO5Y6RAqMAVIvipH396KYEmyYmweOOQjsJMB4DR7ag56S4JxZCyjOVPHbKY7AygZDZD",
+        "previous": "https://graph.facebook.com/v2.8/549412955226337/feed?since=1472656242&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdD82s8bVzEiYUVsCTr6F9sOKIJQKmdMQHCBUuF6ASZBTzsZCINsSt3QJIzIxabDb0QNLAHRFALwyTXuBXORjISRsrkE09Nij8yQwJaWY5JN3lpAZDZD&__previous=1"
+    }
+}

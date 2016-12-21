@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": "571701019694195_575395202658110",
+            "message": "Vi\u00f0 erum a\u00f0 stilla upp fyrir kv\u00f6ldi\u00f0 \ud83c\udf11\ud83d\udc9b Hl\u00f6kkum til a\u00f0 taka \u00e1 m\u00f3ti ykkur \u00e1 d\u00fdnunni kl 20",
+            "updated_time": "2016-12-14T15:24:02+0000"
+        },
+        {
+            "id": "571701019694195_571705706360393",
+            "updated_time": "2016-12-07T13:24:27+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/571701019694195/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481117067&__paging_token=enc_AdC2NZBzofEWVGy88p1ZCFA9OD4o9RCoXy6iZCKpJNVwsNEuFZAZA3EnfkBxk1ABhsXFJeIfIJxfHP5utZC7Xl7Op5RQqzg6UdKmPMJdSFgPYcqelmMgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/571701019694195/feed?since=1481729042&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAfT90Mc48Sbkb9gR7KeDbdYQZC9BLtDHor9tj6XuQCEQeehUa27F0P9GYhSOnu3063qn8RtMlBXkv8lzKHD4eZChGEbMF7XkPZAJP5HkooAYZBVQZDZD&__previous=1"
+    }
+}

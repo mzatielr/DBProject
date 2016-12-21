@@ -1,0 +1,53 @@
+{
+    "data": [
+        {
+            "id": "456409367744845_456859074366541",
+            "story": "Donteisha Johnson is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-02T00:28:21+0000"
+        },
+        {
+            "id": "456409367744845_456825947703187",
+            "story": "Montarious Campbell is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T22:31:14+0000"
+        },
+        {
+            "id": "456409367744845_456803584372090",
+            "story": "Cortez Ballew is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T21:19:50+0000"
+        },
+        {
+            "id": "456409367744845_456744521044663",
+            "story": "Yup Rashita is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T18:20:21+0000"
+        },
+        {
+            "id": "456409367744845_456623351056780",
+            "story": "No Longer Active is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T11:56:30+0000"
+        },
+        {
+            "id": "456409367744845_456508551068260",
+            "story": "Baldy Monae Armstrong is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T02:53:59+0000"
+        },
+        {
+            "id": "456409367744845_456491644403284",
+            "story": "Karisma Delacruz is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-11-01T01:50:23+0000"
+        },
+        {
+            "id": "456409367744845_456409641078151",
+            "story": "Jacob Mcneil is going to My Friends Can Add A DISLlKE BUTT0N To Faceboook........",
+            "updated_time": "2012-10-31T22:01:47+0000"
+        },
+        {
+            "id": "456409367744845_456409371078178",
+            "story": "Cheneria Bhadd Chicc Goodloe created an event.",
+            "updated_time": "2012-10-31T22:00:59+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/456409367744845/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1351720859&__paging_token=enc_AdCLk1dMpfidBoz05l5UZC0k30xoQKVriQakmBVuCt6kJMin8bcTMHcgqMFFO0qdPNXXrb812H0lHsYWVRXlV75OTUyWdRHOvx5spP9prbPgH6QZDZD",
+        "previous": "https://graph.facebook.com/v2.8/456409367744845/feed?since=1351816101&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBvgWQNGL2IsfLjPdAYUghXarGvt0wy8LfQRFQkrzkAtMDYqt5O4BZAumHaKrrcboLK2D8JaBYzZC3cnH0ieOjMC1uDZACnYD3ZA3WiTZCpbNg851QZDZD&__previous=1"
+    }
+}

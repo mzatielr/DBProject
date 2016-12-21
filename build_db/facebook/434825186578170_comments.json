@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "434825186578170_434825476578141",
+            "story": "Jeremy Erbetta is going to Modify The FACEB00K C0L0R.",
+            "updated_time": "2012-10-31T03:22:40+0000"
+        },
+        {
+            "id": "434825186578170_434825189911503",
+            "story": "Tyson Smith created an event.",
+            "updated_time": "2012-10-31T03:21:00+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/434825186578170/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1351653660&__paging_token=enc_AdCbblPjhb2cIK6FiQC3NqPSse40OHxqFccyTCF61g7F1zEEyzPWA6umfcPULxK6xd7y1DJzwyOPvJPvZA5JBtGvAMoSCOphEydi5j2fZBbZAmNKQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/434825186578170/feed?since=1351653760&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBUj9nROs8fFAqQT9wmleH5hx9kX8EKQ8nZCce4MmuRT7ULmuDAiQzRnuZBlZAolDtEqv75hUxqz2wHFLwZCneSCUZBZBiZCGSoHjU32qVGJGBhyNZBSgZDZD&__previous=1"
+    }
+}

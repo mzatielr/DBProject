@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "494022310751831_596072473880147",
+            "message": "Mmm.Bicufaxsrcc uva. X",
+            "updated_time": "2016-03-19T13:45:00+0000"
+        },
+        {
+            "id": "494022310751831_494022314085164",
+            "story": "Indra Anwar Maulana created an event.",
+            "updated_time": "2015-06-14T16:25:26+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/494022310751831/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1434299126&__paging_token=enc_AdCKvCkFVzRxwjaHC8RGlvINZBNPuTdyHMGqbqZBkl3mO0ELTAx8HaBpRQhqoTmU48gj4TLsJbT2ZAsA11LCt7PZC3CB33dS03eVMTrURYmLWsZC7gwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/494022310751831/feed?since=1458395100&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDAMlzpK7tqxRR6QpH86PEWnKe6d14srZAZCmPiSEj5ZCcluuLlqZBpZB52vqJARZC24Jx3i0AYmsySZAhaaZBPKbf8sIkFcQkoLp21YTO7JVpUpp3cbwZDZD&__previous=1"
+    }
+}

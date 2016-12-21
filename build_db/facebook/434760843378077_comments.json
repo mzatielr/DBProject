@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "434760843378077_434760850044743",
+            "story": "Isibaya with Generations and muvhango updates added an event.",
+            "updated_time": "2016-12-01T19:21:08+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/434760843378077/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480620068&__paging_token=enc_AdCJjGiphDs2btYQlJNJ1dPPQmWZCViq3SfVwkBnTSyX5HjooBomrBcYpsqzmyHkQKeRb8ZACESU6DUJfre94Lha65ZAKQyGFK1gIAljNKTAGOJrgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/434760843378077/feed?since=1480620068&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCJjGiphDs2btYQlJNJ1dPPQmWZCViq3SfVwkBnTSyX5HjooBomrBcYpsqzmyHkQKeRb8ZACESU6DUJfre94Lha65ZAKQyGFK1gIAljNKTAGOJrgZDZD&__previous=1"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "505073966177800_505073969511133",
+            "story": "Karen S Treadway created an event.",
+            "updated_time": "2012-10-31T02:40:53+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/505073966177800/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1351651253&__paging_token=enc_AdDQDGG9Rmno8397JqnG1tfeCf72uRmZA4h1wjnKYtRqkdZBVAxH1Bi22iU34Kh1b724RZARjUNU2ZCOZC2ucZAA8f2ZC2tHF5aZAapKMLVPtGjRfgfzawZDZD",
+        "previous": "https://graph.facebook.com/v2.8/505073966177800/feed?since=1351651253&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdDQDGG9Rmno8397JqnG1tfeCf72uRmZA4h1wjnKYtRqkdZBVAxH1Bi22iU34Kh1b724RZARjUNU2ZCOZC2ucZAA8f2ZC2tHF5aZAapKMLVPtGjRfgfzawZDZD&__previous=1"
+    }
+}

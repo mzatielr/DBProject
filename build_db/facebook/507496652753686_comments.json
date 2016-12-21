@@ -1,0 +1,17 @@
+{
+    "data": [
+        {
+            "id": "507496652753686_557773814392636",
+            "updated_time": "2016-02-18T09:58:08+0000"
+        },
+        {
+            "id": "507496652753686_507496659420352",
+            "story": "Indra Anwar Maulana created an event.",
+            "updated_time": "2015-09-21T06:02:23+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/507496652753686/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1442815343&__paging_token=enc_AdA0yPXfrmUipdlUGRQKJdZAR2ZBc81v3oeyUb5VTQ4NJZBFai8iYwZAI34kgz3Bxs05A1iWqUrKMB5Rx3CFDkOsV50wxCKBDkKjrJdX1noKICgNjQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/507496652753686/feed?since=1455789488&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBiukZC0rUXX4IjxMh2T75G1PDd3fJJ4S6bThdzIGHkXXHPPefVFGvX9MotO8teOCHlT8Q95PAJZCHoHsgu9DOdYtDtUWgCx2tdnT66xiLLfuoAZDZD&__previous=1"
+    }
+}

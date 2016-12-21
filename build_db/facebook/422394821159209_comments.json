@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "422394821159209_423710587694299",
+            "story": "Kareeah Muhammad is going to Modify The FACEB00K C0L0R.",
+            "updated_time": "2012-11-03T16:08:14+0000"
+        },
+        {
+            "id": "422394821159209_422511574480867",
+            "story": "Nhaolie Olive Gena Kadi is going to Modify The FACEB00K C0L0R.",
+            "updated_time": "2012-10-31T16:59:31+0000"
+        },
+        {
+            "id": "422394821159209_422467167818641",
+            "story": "Tania Fernandez is going to Modify The FACEB00K C0L0R.",
+            "updated_time": "2012-10-31T14:39:25+0000"
+        },
+        {
+            "id": "422394821159209_422394824492542",
+            "story": "Brandan Lee created an event.",
+            "updated_time": "2012-10-31T11:02:31+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/422394821159209/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1351681351&__paging_token=enc_AdCLAqxkPT9lvojWMtk8wuvGmsLwtYudtLdiPOtIIC59SujvP1uOgeaz6SQuWZBoH1QoltPZAVYVVWR0PnZClcc1sZAprFpc924FQENDrSfyNUVA9QZDZD",
+        "previous": "https://graph.facebook.com/v2.8/422394821159209/feed?since=1351958894&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBvISXlECgaMIWZASqPdDGqZBz3MoOP7GFL5HTrd5eVuBNZBt4FQLTeO8B3XuniGcGFOrppL9ZBZAo0uZBuYQDPa0SoAJZBmdbtW6SJEro02JA9ZBpduwZDZD&__previous=1"
+    }
+}

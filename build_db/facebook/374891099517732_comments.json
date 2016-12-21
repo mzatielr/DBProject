@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "id": "374891099517732_392162051123970",
+            "message": "Questa Sera! Affrettatevi per le liste! \nBOCCONI XMAS PARTY 2016!!!",
+            "updated_time": "2016-12-15T11:04:29+0000"
+        },
+        {
+            "id": "374891099517732_390712891268886",
+            "message": "MANCA POCHISSIMO! AFFRETTATEVI PER LE PRENOTAZIONI;)",
+            "updated_time": "2016-12-12T15:08:42+0000"
+        },
+        {
+            "id": "374891099517732_390072321332943",
+            "message": "BOCCONI XMAS PARTY 2016! AFFRETTATEVI PER LE LISTE!",
+            "updated_time": "2016-12-11T12:50:19+0000"
+        },
+        {
+            "id": "374891099517732_386192065054302",
+            "message": "Non dimenticate di cliccare mi piace su: \nThe Colors of Milano \nVi facciamo scoprire tutte le sfumature della nostra citt\u00e0!",
+            "updated_time": "2016-12-05T09:45:30+0000"
+        },
+        {
+            "id": "374891099517732_374891586184350",
+            "message": "PER PARTECIPARE ALLA SERATA E'NECESSARIO INVIARE UN MESSAGGIO CON IL NOME E COGNOME DEI PARTECIPANTI AL 391 47 05 981 (Whatsapp) indicando la data (15dicembre) e l'universit\u00e0 (Bocconi)",
+            "updated_time": "2016-11-14T13:14:49+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/374891099517732/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1479129289&__paging_token=enc_AdBvGSMBpcjxCl6fOihZCk1UfNheKly9iQpRlTKobCyIdesrNuBIFG8HGYSjRsSL0JkXTHpGz2BamNz5g0haE4HlFcwdEn0YV2S9uq62bksmQZCQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/374891099517732/feed?since=1481799869&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdC21oJwVJv9AyFhpqrsjtFoCGHiwriJD380mATrjcG95930nYl7CRkSesOgDhcPYuBN2UF7TIbKqlEtckDvfhIyb4ZCLGscK5NUU9bhpZBicEHQZDZD&__previous=1"
+    }
+}

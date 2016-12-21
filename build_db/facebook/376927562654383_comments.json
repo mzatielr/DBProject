@@ -1,0 +1,28 @@
+{
+    "data": [
+        {
+            "id": "376927562654383_380597995620673",
+            "message": "I will be there wit Swaan Gididen\nHip hop en el aire...",
+            "updated_time": "2016-12-15T17:27:45+0000"
+        },
+        {
+            "id": "376927562654383_377213612625778",
+            "message": "End this tour with a stop in NYC so I know it's real lol",
+            "updated_time": "2016-12-09T15:00:45+0000"
+        },
+        {
+            "id": "376927562654383_377209959292810",
+            "message": "Man if there were any way I could come I would!!!! You'll absolutely destroy it though! Big things bro!!!!",
+            "updated_time": "2016-12-09T14:51:01+0000"
+        },
+        {
+            "id": "376927562654383_376943045986168",
+            "message": "BOOM!",
+            "updated_time": "2016-12-09T04:23:04+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/376927562654383/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481257384&__paging_token=enc_AdDiYYlWl5txGslFtSDMdGUNnYyEkH6ctHkgIBocihC2D3n61ms7AcsOeKHiGZCYTq6lgObGjr6ZBWKzW8lLS7gyZBJbaDu0NaWzUp2IoZB5SNVHUQZDZD",
+        "previous": "https://graph.facebook.com/v2.8/376927562654383/feed?since=1481822865&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdAWBBkSv57GJDu13zZAZBfBlgU7rADgXXFsODV8ggyN20Wx8DBcjFO4669RnavvPFUXIn7882yWEwSDmVyNFZB7S3zW12GePp1KLpglSJlj88eHAZDZD&__previous=1"
+    }
+}
