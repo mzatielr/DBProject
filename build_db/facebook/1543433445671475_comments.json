@@ -1,0 +1,31 @@
+{
+    "data": [
+        {
+            "id": "1543433445671475_1554209197927233",
+            "message": "\u3010\u6700\u65b0\u6d88\u606f\u3011\u5c55\u5834\u4f48\u7f6e\u5c07\u65bc12.18\u5468\u65e5\u66f4\u65b0\u53ca\u52a0\u8a2d\uff01\u4eca\u665a\u53ca\u660e\u665a(12.16\u5468\u4e94, 12.17\u5468\u516d)\uff0cBoom art bar\u90fd\u6709\u79c1\u4eba\u6d3e\u5c0d\uff0c\u5c55\u89bd\u6642\u6bb5\u70ba4-7pm\u3002\u8acb\u7559\u610f\uff01\n\u3010News\u3011Artwork related decorations will be renewed and added on 12.18 Sun! Moreover, Boom art bar is going to have private parties on today and tomorrow (12.16 Fri & 12.17 Sat), so the Exhibition will be opened at 4-7pm. Thank you!",
+            "updated_time": "2016-12-16T08:35:24+0000"
+        },
+        {
+            "id": "1543433445671475_1544974155517404",
+            "updated_time": "2016-12-12T09:52:35+0000"
+        },
+        {
+            "id": "1543433445671475_1546355282045958",
+            "updated_time": "2016-12-10T08:26:39+0000"
+        },
+        {
+            "id": "1543433445671475_1544975915517228",
+            "message": "\u6709\u7121\u73fe\u5834\uff1f",
+            "updated_time": "2016-12-09T12:50:14+0000"
+        },
+        {
+            "id": "1543433445671475_1545111232170363",
+            "story": "May Yu-Suk Mei posted in \u300a\u964c\u751f\u4eba\u300b\u884c\u70ba\u85dd\u8853\u651d\u5f71\u8a18\u9304\u53ca\u8a69\u4f5c\u54c1\u5c55 \u201cStrangers\u201d Exhibition of Performance Art & Poem \u2014 at \u897f\u8857 Sai Street.",
+            "updated_time": "2016-12-09T11:13:43+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1543433445671475/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481282023&__paging_token=enc_AdDEhCTR9NOhmxs05qZA09RbnZCYTdqyRibRxYeT3tUCIyty019eOZBn1nF1bovLXbqs0M0QjEU2FbDm0CZB8njssdakCeMu9wkiyLVdJmyZCEMeERAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1543433445671475/feed?since=1481877324&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBZB18Ua7QUekkcCZBA0ykYI8Smg0UkbaRWBjnKYfoa1BfHbjBe5l1WnRwqffVhHqpNW3keXeAqWK0LsDLCIF7guuLd0ApZALcA1F8ZCC7t2y2llgZDZD&__previous=1"
+    }
+}

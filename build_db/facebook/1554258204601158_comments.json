@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1554258204601158_1586345378059107",
+            "message": "\u672c\u65e5\u306f\u8d64\u5742\u30b4\u30fc\u30eb\u30c7\u30f3\u30bf\u30a4\u30ac\u30fc\u3067\u30a4\u30d9\u30f3\u30c8\u306b\u51fa\u6f14\u3057\u307e\u3059\u3002\u672c\u65e5\u306f\u5f53\u65e5\u5238\u3082\u3042\u308b\u3088\u3046\u3067\u3059\u306e\u3067\u3001\u98db\u3073\u8fbc\u307f\u3067\u3082\u5927\u6b53\u8fce\u3067\u3059\n\n\u5f53\u65e5\u3054\u4e88\u7d04\u306e\u65b9\u306f\u516c\u5f0f\u306e\u96e8\u3075\u3089\u3057\u30ab\u30eb\u30c6\u30c3\u30c8LINE\u306b\u30e1\u30c3\u30bb\u30fc\u30b8\u304f\u3060\u3055\u3044\u307e\u305b\n\n\u96e8\u3075\u3089\u3057\u30ab\u30eb\u30c6\u30c3\u30c8\u30aa\u30d5\u30b7\u30e3\u30ebLINE ID@kny6868l\n\n\u51fa\u6f14\u306f20\u664230\u5206\u304b\u3089\u306b\u306a\u308a\u307e\u3059\u3002\n\nhttps://www.facebook.com/events/1554258204601158/",
+            "updated_time": "2016-12-17T07:07:51+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1554258204601158/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1481958471&__paging_token=enc_AdBBZAIGLjlTnPsYjEYp5tV8si9q8ZBJymfnc780MTXwoYv7GYlgLQ6ZAUZCW40l9uDsN0tHh067v7LerhBpvAS7xgv3pRGPsXYS81ER9mXwvqaYNgZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1554258204601158/feed?since=1481958471&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdBBZAIGLjlTnPsYjEYp5tV8si9q8ZBJymfnc780MTXwoYv7GYlgLQ6ZAUZCW40l9uDsN0tHh067v7LerhBpvAS7xgv3pRGPsXYS81ER9mXwvqaYNgZDZD&__previous=1"
+    }
+}

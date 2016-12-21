@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "1386688181371692_1386839364689907",
+            "message": "Claudio Rizzo",
+            "updated_time": "2016-11-24T19:54:32+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1386688181371692/feed?access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&until=1480017272&__paging_token=enc_AdCn7LYtTas85iNvJZCq5FruSvcHNwZAcFoVuTbF7JOqST1oZAiU7GauInGCmmVFSK8iGwaRclVfU1Rei847yizppzIzusSpxqkrJk3X6NHFZCv6DAZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1386688181371692/feed?since=1480017272&access_token=190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4&limit=25&__paging_token=enc_AdCn7LYtTas85iNvJZCq5FruSvcHNwZAcFoVuTbF7JOqST1oZAiU7GauInGCmmVFSK8iGwaRclVfU1Rei847yizppzIzusSpxqkrJk3X6NHFZCv6DAZDZD&__previous=1"
+    }
+}
