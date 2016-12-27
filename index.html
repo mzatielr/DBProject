@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="css/mouse.css">
 </head>
 
-<body ng-app="mouse">
+<body ng-app="mouse" ng-controller="main">
     <div class="logoHeader">
         <div class="container">
             <div class="row">
@@ -40,8 +40,8 @@
                 <div class="col-md-4">
                     <br>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="חפש את האירועים החמים">
-                        <span class="input-group-btn">
+                        <input type="text" class="form-control" placeholder="חפש את האירועים החמים" ng-model="searchString">
+                        <span class="input-group-btn" ng-click="search(searchString)">
                             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                         </button>
                         </span>

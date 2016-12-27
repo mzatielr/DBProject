@@ -10,6 +10,13 @@ mouse.config(function ($routeProvider, $locationProvider) {
             templateUrl: 'views/city.html',
             controller: 'city'
         })
+        .when('/event/', {
+            templateUrl: 'views/event.html',
+            controller: 'event'
+        })
+        .when('/search/', {
+            templateUrl: 'views/search.html',
+        })
         .otherwise({
             redirectTo: '/'
         });
@@ -17,11 +24,35 @@ mouse.config(function ($routeProvider, $locationProvider) {
 });
 
 angular.module('mouse.controllers', [])
+    .controller('main', function ($scope, $http, $location) {
+        $scope.searchString = "";
+
+        $scope.search = function () {
+            console.log("Search...");
+            var data = {};
+            data.searchString = $scope.searchString;
+
+            $http.post('http://localhost:7000/api/search/', data)
+                .then(function (response) {
+                    console.log(response);
+                    $scope.searchResults = response.data;
+                    $location.path("/search");
+                });
+        }
+    })
     .controller('mosaic', function ($scope, $http) {
         $http.get('http://localhost:7000/api/mosaic/')
             .then(function (response) {
                 console.log(response);
                 $scope.mosaic = response.data;
+            });
+    })
+    .controller('event', function ($scope, $http, $routeParams) {
+        var eventId = $routeParams.id;
+        $http.get('http://localhost:7000/api/event/' + eventId + '/')
+            .then(function (response) {
+                console.log(response);
+                $scope.event = response.data;
             });
     })
     .controller('city', function ($scope, $http) {
