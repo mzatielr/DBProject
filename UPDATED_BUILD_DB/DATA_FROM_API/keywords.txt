@@ -1,0 +1,236 @@
+Tokyo
+New York
+NewYork
+Sao Paulo
+Seoul
+Mexico City
+Osaka
+KobeKyoto
+Manila
+Mumbai
+Delhi
+Jakarta
+Lagos
+Kolkata
+Cairo
+Los Angeles
+LosAngeles
+Buenos Aires
+BuenosAires
+Rio
+Moscow
+Shanghai
+Karachi
+Paris
+Istanbul
+Nagoya
+Beijing
+Chicago
+London
+Shenzhen
+D?sseldorf
+Tehran
+Bogota
+Lima
+Bangkok
+Johannesburg
+Chennai
+Taipei
+Baghdad
+Santiago
+Bangalore
+Hyderabad
+St Petersburg
+Philadelphia
+Lahore
+Kinshasa
+Miami
+Ho Chi Minh City
+Madrid
+Tianjin
+Kuala Lumpur
+Toronto
+Milan
+Shenyang
+Dallas
+Boston
+Belo Horizonte
+Khartoum
+Riyadh
+Singapore
+Washington
+Detroit
+Barcelona
+Houston
+Athens
+Berlin
+Sydney
+Atlanta
+Guadalajara
+San Francisco
+Oakland
+Montreal.
+Monterey
+Melbourne
+Ankara
+Recife
+Phoenix
+Durban
+Porto Alegre
+Dalian
+Jeddah
+Seattle
+Cape Town
+San Diego
+Fortaleza
+Curitiba
+Rome
+Naples
+Minneapolis
+St. Paul
+Tel Aviv
+TelAviv
+Birmingham
+Frankfurt
+Lisbon
+Manchester
+San Juan
+Katowice
+Tashkent
+Fukuoka
+Baku/Sumqayit
+St. Louis
+Baltimore
+Sapporo
+Tampa
+St. Petersburg
+Taichung
+Warsaw
+Denver
+Cologne/Bonn
+Hamburg
+Dubai
+Pretoria
+Vancouver
+Beirut
+Budapest
+Cleveland
+Pittsburgh
+Campinas
+Harare
+Brasilia
+Kuwait
+Munich
+Portland
+Brussels
+Vienna
+San Jose
+Damman
+Copenhagen
+Brisbane
+Riverside
+San Bernardino
+Cincinnati
+Accra
+Ramat Gan
+Jerusalem
+Givataim
+Beer Sheva
+BeerSheva
+Holon
+Rishon Letzion
+Nes Ziona
+Bat Yam
+Herziliya
+Tsfat
+Tiberias
+Dead Sea
+Haifa
+Ashkelon
+Ashdod
+Ramat Yishai
+Afula
+Rehovot
+Metula
+Kiryat Shemona
+תל אביב
+תלאביב
+הרצליה
+ירושלים
+חיפה
+באר שבע
+בארשבע
+עפולה
+בת ים
+ראשון לציון
+חולון
+אשקלון
+מטולה
+אשדוד
+רחובות
+נס ציונה
+רמת ישי
+צפת
+טבריה
+גבעתיים
+רמת גן
+רמתגן
+food
+drinks
+dance
+party
+alcohol
+show
+music
+coca-cola
+cocacola
+acoustic
+rock
+metal
+beer
+wine
+cakes
+ice-cream
+chocolate
+library
+books
+comics
+games
+video-games
+videogames
+final fantasy
+finalfantasy
+diablo
+simpsons
+gameofthrones
+vikings
+littlebigplant
+earth
+university
+tv
+television
+radio
+internet
+parade
+holiday
+celebration
+lights
+chirstmass
+xmas
+hanukah
+vegeterian
+meat
+bbq
+vegimite
+mermite
+fish
+dolphines
+android
+ios
+apple
+google
+wood
+smartphones
+anime
+valentines
+cooking
