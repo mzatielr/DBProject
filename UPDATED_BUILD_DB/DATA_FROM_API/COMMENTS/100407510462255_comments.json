@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "100407510462255_100414780461528",
+            "message": "WICKED! OSAKA DJs  NEW YEAR 2017\n\nDJ ISE (sexy trax) \nNAO NOMURA (BWR) \nDaisuke Miyamoto (Orienta-Rhythm)\nASAHARA (R(e'rre)del Mondo)\nSHIMAZAKI (zero zero) \nYOKU (A Hundred Birds) \nDaisuke (house fusion)\nOSAKAMAN (BWR) \nMISA (feelin'/session )\nTakahiro Sakaguchi \nYO-ICHI KOYAMA (Rhythm R)\nDJ KONISHI \nDJ Dmitri Absinthe\nMIN-TECH (team Tricorose)\nTOKUMOTO \nDJ HIROSE \nDAISUKE ITO\uff08Pastime Paradise\uff09\n\nADM ALL 1000/2D",
+            "updated_time": "2016-12-23T10:32:54+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/100407510462255/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1482489174&__paging_token=enc_AdC2ggOaGoQBjehZCPQbg0LgbYF5arEHnQZBit730WEmy0coaViKDA3m9HQHcP4oBHqgCquUvciBkQZBud5md32pqzUOf3yZAcZAhXtnXWzvC5GpN3AZDZD",
+        "previous": "https://graph.facebook.com/v2.8/100407510462255/feed?since=1482489174&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdC2ggOaGoQBjehZCPQbg0LgbYF5arEHnQZBit730WEmy0coaViKDA3m9HQHcP4oBHqgCquUvciBkQZBud5md32pqzUOf3yZAcZAhXtnXWzvC5GpN3AZDZD&__previous=1"
+    }
+}

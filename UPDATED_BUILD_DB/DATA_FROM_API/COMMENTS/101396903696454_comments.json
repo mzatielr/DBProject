@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "id": "101396903696454_101401103696034",
+            "updated_time": "2016-12-24T01:20:16+0000"
+        },
+        {
+            "id": "101396903696454_101400587029419",
+            "message": "DE LUNES A VIERNES 20:00 hrs.\nS\u00c1BADOS Y DOMINGOS 18:00 hrs. \nBoletos disponibles en taquilla y en el sistema Ticketmaster.\nwww.ticketmaster.com",
+            "story": "Teatro Enrique Lizalde shared a link to the event: C\u00edscale, c\u00edscale diablo panz\u00f3n.",
+            "updated_time": "2016-12-24T01:18:44+0000"
+        },
+        {
+            "id": "101396903696454_101398983696246",
+            "message": "En esta \u00e9poca decembrina abramos nuestros corazones a la uni\u00f3n, armon\u00eda, paz, el perd\u00f3n y el amor; el mejor aliado para unir estos valores es la familia y que mejor, que a trav\u00e9s de nuestras tradiciones podamos lograr esta uni\u00f3n, el perd\u00f3n y la armon\u00eda. Una de nuestras m\u00e1s antiguas y bellas tradiciones de nuestro pa\u00eds es la Pastorela.\nCon humor y cr\u00edtica social \u201cC\u00edscale, c\u00edscale Diablo Panz\u00f3n\u201d nos muestra c\u00f3mo unos pastores son enga\u00f1ados por Sat\u00e1n y Satan\u00edn, quienes les dan una caja que contiene poderes; Gila llena de ego\u00edsmo y avaricia la arrebata a los pastores; generando discordia entra ellos. Con la ayuda de Jod\u00edas y el Angelito, lograr\u00e1n llegar a Belem a ver LA LUZ, venciendo la envidia y la tan sonada corrupci\u00f3n.\nCon: Elsa Jaimes, Vicente Torres, Salvador \u00c1lvarez, Gabriel Pascual, Rosy Luna, Alan Bautizta, Emilio de C\u00f3rdoba, Rogelio Faugier, Jocelynn Medina y Erika Mart\u00ednez.",
+            "updated_time": "2016-12-24T01:11:51+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/101396903696454/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1482541911&__paging_token=enc_AdCvvcy66ZC7R41AiXMdxonSRZAAwLcdiujtibCnJEAAELrZAknUXfkHLMmseKOH9Rj6KAPQZA01XuyPxeZAb9dFb3D9neYWp2yVA6NUATZBHOy13r8AZDZD",
+        "previous": "https://graph.facebook.com/v2.8/101396903696454/feed?since=1482542416&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdD89rkssOSGA8q4zWFcyZAOFlEaJ4WXjxgTb8SVznopiowUdPCuBzFELETAXjjvYADjBVkRPOse0jNfxrb87o0oKoEz2ke9OxzgbUwWV342FbAZDZD&__previous=1"
+    }
+}

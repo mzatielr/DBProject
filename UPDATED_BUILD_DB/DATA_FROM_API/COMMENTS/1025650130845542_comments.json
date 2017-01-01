@@ -1,0 +1,77 @@
+{
+    "data": [
+        {
+            "id": "1025650130845542_1235406396536580",
+            "message": "Day 3 @ Gaomei Wetland for Platinum Members only",
+            "updated_time": "2016-12-23T06:11:33+0000"
+        },
+        {
+            "id": "1025650130845542_1234730263270860",
+            "message": "Puli tour",
+            "updated_time": "2016-12-22T13:00:50+0000"
+        },
+        {
+            "id": "1025650130845542_1234729826604237",
+            "message": "Day 2 @ Sun Moon Lake",
+            "updated_time": "2016-12-22T13:00:08+0000"
+        },
+        {
+            "id": "1025650130845542_1233973813346505",
+            "message": "Welcome Dinner inside Hotel",
+            "updated_time": "2016-12-21T14:14:06+0000"
+        },
+        {
+            "id": "1025650130845542_1233730256704194",
+            "message": "Welcome to Taichung",
+            "updated_time": "2016-12-21T07:10:47+0000"
+        },
+        {
+            "id": "1025650130845542_1233581943385692",
+            "message": "Good morning all DreamTrippers ,Please proceed to the Hospitality desk for registration",
+            "updated_time": "2016-12-21T02:19:17+0000"
+        },
+        {
+            "id": "1025650130845542_1233580260052527",
+            "message": "Hello Dreamtrippers,\n\nPls meet the representative at Arrival Hall upon arriving Taichung International Airport (09:00am - 18:00pm).",
+            "updated_time": "2016-12-21T02:17:18+0000"
+        },
+        {
+            "id": "1025650130845542_1232813370129216",
+            "message": "Hello! My name is Ivan ,The In-Destination Support of this trip. Hope you have a wonderful trip in Taichung, I will be waiting for you at the Lobby of Evergreen Laurel Hotel . See u there tomorrow .",
+            "updated_time": "2016-12-20T04:00:23+0000"
+        },
+        {
+            "id": "1025650130845542_1203073683103185",
+            "message": "Travel Tips\n\u2022 A valid passport that expires at least 6 months after this trip is required.\n\u2022 Contact your consulate for visa requirements.\n\u2022 Bring your confirmation email, in case you are asked.\n\u2022 Upon check-in you will be asked to provide proof of identification and a means in which to pay for incidentals incurred during your stay that are NOT included.\n\u2022 Please do not forget to contact your credit card company to let them know you will be using it outside your state, for safety purposes.\n\u2022 The best way to protect yourself from the unexpected is to purchase traveler's insurance.\n\u2022 If you are traveling with any friends who you did not provide an email address for when you booked this DreamTrip - whether they are guests, member or non-members - please feel free to pass along this email to them as well.",
+            "updated_time": "2016-11-21T08:56:00+0000"
+        },
+        {
+            "id": "1025650130845542_1203073486436538",
+            "updated_time": "2016-11-21T08:55:32+0000"
+        },
+        {
+            "id": "1025650130845542_1203073429769877",
+            "message": "Your trip includes 2 airport transfers:\nDecember 21, 10 a.m., 1 p.m., 3 p.m. and 6 p.m.: From Taichung Airport to hotel.\nDecember 24, 9 a.m., 11 a.m., 1 p.m. or 3 p.m.: From hotel to Taichung Airport.\nTo get free access to airport transfers, you must submit your flight information by December 4. \nhttps://roviadreamtrips.formstack.com/forms/1612tw8308_taichung_4",
+            "updated_time": "2016-11-21T08:55:25+0000"
+        },
+        {
+            "id": "1025650130845542_1203073286436558",
+            "message": "http://bit.ly/2ffqSHM",
+            "updated_time": "2016-11-21T08:54:55+0000"
+        },
+        {
+            "id": "1025650130845542_1025650387512183",
+            "message": "Hello DreamTrippers!\nIf you are traveling internationally to join this trip, please ensure that your passport is current and any required visa is obtained and valid. Many countries require passports and/or visas to be valid for a minimum of six months after the end date of this trip. It is your responsibility to obtain any required visas and other documentation prior to traveling. If you are unable to obtain a visa, the Cancellation Policy for this DreamTrip will apply.",
+            "updated_time": "2016-04-20T17:01:15+0000"
+        },
+        {
+            "id": "1025650130845542_1025650134178875",
+            "story": "DreamTrips added an event.",
+            "updated_time": "2016-04-20T17:00:31+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1025650130845542/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1461171631&__paging_token=enc_AdBE3CT12z6K455fIYwVKEQfU31G9mRMUVg1ZCiWwsEfQGcLlsZBXRboZBeLpZA45LnqmZCEvZCUo7Vk1uirdH8eScpv9gsf0wnIQJcr9FZBv5sVJYBFwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1025650130845542/feed?since=1482473493&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdDIKdoZBe2GfxXBZBD3K86uCk7f6LfSAkZCZCJeohVtjYiSvsvZBF7C5KIhfg2IR7alGZBGxKOGgMpruZCCvSz5ZBE48Fi6AwSAxh9gbVoFGcASAPXbMwZDZD&__previous=1"
+    }
+}

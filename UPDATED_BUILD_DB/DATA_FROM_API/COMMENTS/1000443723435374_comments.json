@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "1000443723435374_1000596883420058",
+            "message": "Interesting. Went there bfor. Want to go again but end of oct got trip to perth\u263a\ufe0f",
+            "updated_time": "2016-10-05T12:21:23+0000"
+        },
+        {
+            "id": "1000443723435374_1000452473434499",
+            "message": "Juls Bakar, sape lg geng TAR u jmpt? Hubby we all leh gi tak? Hehe... ATM bergerak tu penting... \ud83d\ude05",
+            "updated_time": "2016-10-05T03:52:58+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1000443723435374/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1475639578&__paging_token=enc_AdB7ZC6WNUob8Bhxhbb9ZBsCmLq6lUCYyJdyXCRI5OVFHQUwwJmH2CgfrNjL41eOtQw69Q0eJ5Vc4jJrcqAqrZCcQbt9fi22OogsrrEQ1nZAcI5DwwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1000443723435374/feed?since=1475670083&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdDrsELPPLtd7t0IIJqFQ4wUw3A75od1YVNfC9kVo1F90l4beqYaYUvm8HvWknCOTfIHqxEamOvNs1ZANbI2mQHG6LMZAuQqCBE6nGXZAAQPBiLXQZDZD&__previous=1"
+    }
+}

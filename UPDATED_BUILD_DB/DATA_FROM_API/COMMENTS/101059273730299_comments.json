@@ -1,0 +1,18 @@
+{
+    "data": [
+        {
+            "id": "101059273730299_101080967061463",
+            "message": "Na hali czy p\u0142ycie g\u0142\u00f3wnej?",
+            "updated_time": "2016-12-23T20:28:38+0000"
+        },
+        {
+            "id": "101059273730299_101069483729278",
+            "message": "jakby znalaz\u0142a si\u0119 podw\u00f3zka to bym zagra\u0142 :)",
+            "updated_time": "2016-12-23T19:55:52+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/101059273730299/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1482522952&__paging_token=enc_AdAz2ko7ef3LCfwLS853kWjfkSB53wZBTZC4gExhOu5FmUmtDdrYIaiBiyK4QqyIBTPw2KAn9VVlfwZAGGfjyJpUo6ZAXUGJj2ZC6kBIONO4eSfOacwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/101059273730299/feed?since=1482524918&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdACidkGw37B875jE1wk5bHtdUzCqBtx1xnCmgHHkrjxhdEjIWTqL8i0ff7Rzggn3JUIe2MOVluZCBMQvJa773ceRPi6vtXoUuXB2E06mmOcHIgZDZD&__previous=1"
+    }
+}

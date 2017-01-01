@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "id": "1022487754524859_1164902883616678",
+            "story": "\u00c3bu \u1e3euhammad shared Areesha Travells's post to the event: Jeddah, Saudi Arabia.",
+            "updated_time": "2016-12-10T07:44:22+0000"
+        },
+        {
+            "id": "1022487754524859_1156547717785528",
+            "updated_time": "2016-12-03T02:10:43+0000"
+        },
+        {
+            "id": "1022487754524859_1022487764524858",
+            "story": "Worldwide College Tours Inc added an event.",
+            "updated_time": "2016-07-09T00:42:41+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/1022487754524859/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1468024961&__paging_token=enc_AdCygtcUOy9QpEMmJfZAZBCNip1pDkojggXWoUWHAKEi3ZAyjvGKFotA8ycbJIU1HRmOjCZBZCwRXAAfbKqgxuVhbV4YYd4ZBOaAGr4iuPB5M9z4rZC5gZDZD",
+        "previous": "https://graph.facebook.com/v2.8/1022487754524859/feed?since=1481355862&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdBrxkhUGrzUfPvQvkLXYF1QzzaYIROZBBs1ymlgPkMi6iFcZBSfwhouT1kVLprqtqhefiEffwIHgIHrCve5lMm391eACoi8hkhdTjz5mmhi1S4QZDZD&__previous=1"
+    }
+}

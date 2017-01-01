@@ -1,0 +1,13 @@
+{
+    "data": [
+        {
+            "id": "102310463597178_102419073586317",
+            "message": "So sorry. We will be out of town.",
+            "updated_time": "2016-12-05T23:52:48+0000"
+        }
+    ],
+    "paging": {
+        "next": "https://graph.facebook.com/v2.8/102310463597178/feed?access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&until=1480981968&__paging_token=enc_AdC4UP3QtqIfRCLBdhxYiy3WKDhst7bAGZAVCsxu4QzYR756sSve3DzRDcCCOWK6duqRZBWZC7GA6KfuzhZCZASi8NiOkW04ELUPnP3sfDejqWb4DEwZDZD",
+        "previous": "https://graph.facebook.com/v2.8/102310463597178/feed?since=1480981968&access_token=1226345454111086|AQ49uPrrpTpJC1436x7fXhsaSrc&limit=25&__paging_token=enc_AdC4UP3QtqIfRCLBdhxYiy3WKDhst7bAGZAVCsxu4QzYR756sSve3DzRDcCCOWK6duqRZBWZC7GA6KfuzhZCZASi8NiOkW04ELUPnP3sfDejqWb4DEwZDZD&__previous=1"
+    }
+}
