@@ -25,7 +25,7 @@ mouse.config(function ($routeProvider, $locationProvider) {
 
 mouse.factory('ServerService', function() {
   return {
-      address : 'http://localhost:8000'
+      address : 'http://localhost:7000'
   };
 });
 
