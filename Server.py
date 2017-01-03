@@ -4,10 +4,10 @@
 from flask import Flask, send_from_directory, jsonify, render_template, request
 import MySQLdb
 import sys
+import time
 
 app = Flask(__name__)
 MySQLConn = None
-
 
 # Serve static files like js, img, css etc.
 @app.route('/<folder>/<fileName>')
@@ -83,3 +83,5 @@ if __name__ == "__main__":
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:
             print "Unexpected error:", sys.exc_info()[0]
+        
+        time.sleep(10)
