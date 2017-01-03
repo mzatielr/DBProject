@@ -23,8 +23,14 @@ mouse.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
+mouse.factory('ServerService', function() {
+  return {
+      address : 'http://localhost:8000'
+  };
+});
+
 angular.module('mouse.controllers', [])
-    .controller('main', function ($scope, $http, $location) {
+    .controller('main', function ($scope, $http, $location, ServerService) {
         $scope.searchString = "";
 
         $scope.search = function () {
@@ -32,7 +38,7 @@ angular.module('mouse.controllers', [])
             var data = {};
             data.searchString = $scope.searchString;
 
-            $http.post('http://localhost:7000/api/search/', data)
+            $http.post(ServerService.address + '/api/search/', data)
                 .then(function (response) {
                     console.log(response);
                     $scope.searchResults = response.data;
@@ -40,23 +46,23 @@ angular.module('mouse.controllers', [])
                 });
         }
     })
-    .controller('mosaic', function ($scope, $http) {
-        $http.get('http://localhost:7000/api/mosaic/')
+    .controller('mosaic', function ($scope, $http, ServerService) {
+        $http.get(ServerService.address + '/api/mosaic/')
             .then(function (response) {
                 console.log(response);
                 $scope.mosaic = response.data;
             });
     })
-    .controller('event', function ($scope, $http, $routeParams) {
+    .controller('event', function ($scope, $http, $routeParams, ServerService) {
         var eventId = $routeParams.id;
-        $http.get('http://localhost:7000/api/event/' + eventId + '/')
+        $http.get(ServerService.address + '/api/event/' + eventId + '/')
             .then(function (response) {
                 console.log(response);
                 $scope.event = response.data;
             });
     })
-    .controller('city', function ($scope, $http) {
-        $http.get('http://localhost:7000/api/city/')
+    .controller('city', function ($scope, $http, ServerService) {
+        $http.get(ServerService.address + '/api/city/')
             .then(function (response) {
                 console.log(response);
                 $scope.data = response.data;

@@ -6,6 +6,8 @@ import MySQLdb
 import sys
 
 app = Flask(__name__)
+MySQLConn = None
+
 
 # Serve static files like js, img, css etc.
 @app.route('/<folder>/<fileName>')
@@ -37,8 +39,9 @@ def mosaic():
 
 @app.route("/api/event/<id>/")
 def event(id):
-    event = {"city_name": "Tel-Aviv", "event_id": 1, "event_category": "ART_EVENT", "event_name": "אומנות בכיכר1111", "event_description":"אומנות בכיכר הוא אירוע מיוחד במינו שקורה פעם בשנה בו עושים מלא מלא מלא אומנות בכיכר"}
-    
+    cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
+    cur.execute("SELECT * FROM Event WHERE id = %s", (id,))
+    event = cur.fetchone()
     return jsonify(event) 
 
 @app.route("/api/city/")
@@ -72,16 +75,10 @@ def index2():
 if __name__ == "__main__":
     while True:
         try:
-            # http://zetcode.com/db/mysqlpython/
-#            con = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08');
-#            cur = con.cursor(MySQLdb.cursors.DictCursor)
-#            cur.execute("SELECT VERSION()")
-#
-#            ver = cur.fetchone()
-#
-#            print "Database version : %s " % ver
+            MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08');
+            MySQLConn.autocommit(True)
 
-            app.run(host='0.0.0.0', port=7000)
+            app.run(host='0.0.0.0', port=8000, threaded=True, debug=True)
         except MySQLdb.Error, e:
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:
