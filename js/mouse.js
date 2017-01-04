@@ -23,10 +23,10 @@ mouse.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-mouse.factory('ServerService', function() {
-  return {
-      address : 'http://localhost:7000'
-  };
+mouse.factory('ServerService', function () {
+    return {
+        address: 'http://localhost:8000'
+    };
 });
 
 angular.module('mouse.controllers', [])
@@ -60,6 +60,42 @@ angular.module('mouse.controllers', [])
                 console.log(response);
                 $scope.event = response.data;
             });
+
+        $http.get(ServerService.address + '/api/event/' + eventId + '/comments/')
+            .then(function (response) {
+                console.log(response);
+                $scope.comments = response.data;
+            });
+
+        $scope.updateEvent = function () {
+            $http.get(ServerService.address + '/api/event/' + eventId + '/update/')
+                .then(function (response) {
+                    $http.get(ServerService.address + '/api/event/' + eventId + '/')
+                        .then(function (response) {
+                            console.log(response);
+                            $scope.event = response.data;
+
+                            $('#updateNotify').modal();
+                        });
+                });
+        }
+
+        $scope.sendComment = function () {
+            var data = {};
+            data.newComment = $scope.newComment;
+
+            $http.post(ServerService.address + '/api/event/' + eventId + '/comments/add/', data)
+                .then(function (response) {
+                    console.log(response);
+                    $http.get(ServerService.address + '/api/event/' + eventId + '/comments/')
+                        .then(function (response) {
+                            console.log(response);
+                            $scope.comments = response.data;
+                        
+                            $('#addCommentNotify').modal();
+                        });
+                });
+        }
     })
     .controller('city', function ($scope, $http, ServerService) {
         $http.get(ServerService.address + '/api/city/')

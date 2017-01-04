@@ -37,11 +37,22 @@ def mosaic():
     
     return jsonify(l)
 
+@app.route("/api/event/<id>/update/")
+def eventUpdate(id):
+    return "OK"
+
 @app.route("/api/event/<id>/")
 def event(id):
     cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
     cur.execute("SELECT * FROM Event WHERE id = %s", (id,))
     event = cur.fetchone()
+    return jsonify(event) 
+
+@app.route("/api/event/<id>/comments/")
+def comments(id):
+    cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
+    cur.execute("SELECT * FROM Comment WHERE event_it = %s ORDER BY updated_time DESC", (id,))
+    event = cur.fetchall()
     return jsonify(event) 
 
 @app.route("/api/city/")
@@ -78,7 +89,7 @@ if __name__ == "__main__":
             MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08')
             MySQLConn.autocommit(True)
 
-            app.run(host='0.0.0.0', port=7000, threaded=True, debug=True)
+            app.run(host='0.0.0.0', port=8000, threaded=True, debug=True)
         except MySQLdb.Error, e:
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:

@@ -63,6 +63,10 @@ body {
     background-color: #2e6da4;
 }
 
+.navLinks > li > a:focus {
+    background-color: #2e6da4;
+}
+
 .cm_content
 {
 	width: 490px;
