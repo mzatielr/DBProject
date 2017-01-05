@@ -39,21 +39,30 @@ def mosaic():
 
 @app.route("/api/event/<id>/update/")
 def eventUpdate(id):
-    return "OK"
+    return "DONE"
 
-@app.route("/api/event/<id>/")
-def event(id):
+@app.route("/api/event/<event_id>/")
+def event(event_id):
     cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
-    cur.execute("SELECT * FROM Event WHERE id = %s", (id,))
+    cur.execute("SELECT * FROM Event WHERE id = %s", (event_id,))
     event = cur.fetchone()
     return jsonify(event) 
 
-@app.route("/api/event/<id>/comments/")
-def comments(id):
+@app.route("/api/event/<event_id>/comments/")
+def comments(event_id):
     cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
-    cur.execute("SELECT * FROM Comment WHERE event_it = %s ORDER BY updated_time DESC", (id,))
+    cur.execute("SELECT * FROM Comment WHERE event_it = %s ORDER BY updated_time DESC", (event_id,))
     event = cur.fetchall()
     return jsonify(event) 
+
+@app.route("/api/event/<event_id>/comments/add/", methods=['POST'])
+def addComment(event_id):
+    json_data = request.get_json(force=True) 
+    newComment = json_data['newComment']
+    
+    cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
+    cur.execute("INSERT INTO Comment (message, event_it) VALUES (%s, %s)", (newComment, event_id,))
+    return "DONE"
 
 @app.route("/api/city/")
 def city():

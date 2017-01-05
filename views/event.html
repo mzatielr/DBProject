@@ -14,12 +14,11 @@
 <button type="button" class="btn btn-primary btn-lg" ng-click="updateEvent()">עדכן נתוני האירוע</button>
 
 
-<h3>תגובות</h3>
-<br>
+<h3>הערות</h3>
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>תגובה</th>
+            <th>הערה</th>
             <th>תאריך</th>
         </tr>
     </thead>
@@ -33,10 +32,10 @@
 
 <form class="form-inline">
     <div class="form-group">
-        <label for="newComment">תגובה חדשה</label>
-        <input type="text" class="form-control" id="newComment" ng-model="newComment">
+        <label for="newComment">הערה חדשה</label>
+        <input type="text" class="form-control" id="newComment" ng-model="newComment" oninvalid="this.setCustomValidity('חובה למלא הערה')" required>
     </div>
-    <button type="submit" class="btn btn-default" ng-click="sendComment()">שלח תגובה</button>
+    <button type="submit" class="btn btn-default" ng-click="sendComment()">שלח הערה</button>
 </form>
 
 
