@@ -1,0 +1,15 @@
+Newest event in 8 separate categories with the newest events 
+
+“Hottest city”: return 10 events with the closest time to the present 
+in the city that has the most events ongoing.
+
+All the events that occur in the same month with the event with the highest attending count.
+
+The place that has the highest number of events from the categoriy that it's events have the highest attendings.
+
+Categories of the 10 events with highest number of Comments.
+
+Most Popular Owner  - The Owner that it’s events got the highest number of Comments among the owners of the 10 events with the highest number of attendings
+
+Most Sentimental Owner – The owner that has the highest number of events with the word “Love” in their description
+.
