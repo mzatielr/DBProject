@@ -98,7 +98,7 @@ if __name__ == "__main__":
             MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08')
             MySQLConn.autocommit(True)
 
-            app.run(host='0.0.0.0', port=8000, threaded=True, debug=True)
+            app.run(host='0.0.0.0', port=11999, threaded=True, debug=True)
         except MySQLdb.Error, e:
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:
