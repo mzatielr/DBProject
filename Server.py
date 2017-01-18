@@ -1,6 +1,9 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+import os
+os.environ['PYTHON_EGG_CACHE'] = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "python-eggs")
+
 from flask import Flask, send_from_directory, jsonify, render_template, request
 import MySQLdb
 import sys
@@ -9,11 +12,16 @@ import time
 app = Flask(__name__)
 MySQLConn = None
 
+SERVER = "localhost"
+PORT = "40666"
+
 # Serve static files like js, img, css etc.
 @app.route('/<folder>/<fileName>')
 def serveStatic(folder, fileName):
+    if folder == "js" and fileName == "mouse.js":
+        return open("js/mouse.js").read().replace("%SERVER%", SERVER).replace("%PORT%", PORT)
+    
     if folder in ('js', 'img', 'css', 'lib', 'fonts', 'views'):
-    	print type(folder), type(fileName)
         return send_from_directory(folder, fileName)
     
     return "404"
@@ -36,6 +44,16 @@ def mosaic():
               "מלא מלא אוכל בלה בלה בלה אוכל בלה אוכל."})    
     
     return jsonify(l)
+
+@app.route("/api/query/<query_name>/")
+def query(query_name):
+    if query_name in ("highest_attending"):
+        sql = open("queries/" + query_name + ".sql").read()
+        cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
+        cur.execute(sql)
+        return jsonify(cur.fetchall())
+    
+    return "404"
 
 @app.route("/api/event/<id>/update/")
 def eventUpdate(id):
@@ -93,12 +111,15 @@ def index2():
 	return send_from_directory("", "index.html")
 
 if __name__ == "__main__":
+    if len(sys.argv) == 2:
+        PORT = sys.argv[1]
+        
     while True:
         try:
             MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08')
             MySQLConn.autocommit(True)
 
-            app.run(host='0.0.0.0', port=11999, threaded=True, debug=True)
+            app.run(host='0.0.0.0', port=int(PORT), threaded=True, debug=True)
         except MySQLdb.Error, e:
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:

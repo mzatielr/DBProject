@@ -8,7 +8,10 @@ mouse.config(function ($routeProvider, $locationProvider) {
         })
         .when('/city/', {
             templateUrl: 'views/city.html',
-            controller: 'city'
+            controller: 'query',
+            resolve: {
+                queryName: function ($route) { $route.current.params.queryName = "highest_attending"; }
+            }
         })
         .when('/event/', {
             templateUrl: 'views/event.html',
@@ -25,7 +28,7 @@ mouse.config(function ($routeProvider, $locationProvider) {
 
 mouse.factory('ServerService', function () {
     return {
-        address: 'http://localhost:11999'
+        address: 'http://%SERVER%:%PORT%'
     };
 });
 
@@ -91,14 +94,14 @@ angular.module('mouse.controllers', [])
                         .then(function (response) {
                             console.log(response);
                             $scope.comments = response.data;
-                        
+
                             $('#addCommentNotify').modal();
                         });
                 });
         }
     })
-    .controller('city', function ($scope, $http, ServerService) {
-        $http.get(ServerService.address + '/api/city/')
+    .controller('query', function ($scope, $http, ServerService, $routeParams) {
+        $http.get(ServerService.address + '/api/query/' + $routeParams.queryName + '/')
             .then(function (response) {
                 console.log(response);
                 $scope.data = response.data;
