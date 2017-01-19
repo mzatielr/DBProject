@@ -4,13 +4,29 @@ mouse.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: 'views/mosaic.html',
-            controller: 'mosaic'
-        })
-        .when('/city/', {
-            templateUrl: 'views/city.html',
             controller: 'query',
             resolve: {
-                queryName: function ($route) { $route.current.params.queryName = "highest_attending"; }
+                queryName: function ($route) {
+                    $route.current.params.queryName = "mosaic";
+                }
+            }
+        })
+        .when('/hottest_city/', {
+            templateUrl: 'views/hottest_city.html',
+            controller: 'query',
+            resolve: {
+                queryName: function ($route) {
+                    $route.current.params.queryName = "hottest_city";
+                }
+            }
+        })
+        .when('/highest_attending/', {
+            templateUrl: 'views/highest_attending.html',
+            controller: 'query',
+            resolve: {
+                queryName: function ($route) {
+                    $route.current.params.queryName = "highest_attending";
+                }
             }
         })
         .when('/event/', {
@@ -26,11 +42,11 @@ mouse.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-mouse.factory('ServerService', function () {
+mouse.factory('ServerService', ['$location', function ($location) {
     return {
-        address: 'http://%SERVER%:%PORT%'
+        address: 'http://' + $location.host() + ':' + $location.port()
     };
-});
+}]);
 
 angular.module('mouse.controllers', [])
     .controller('main', function ($scope, $http, $location, ServerService) {
@@ -49,13 +65,13 @@ angular.module('mouse.controllers', [])
                 });
         }
     })
-    .controller('mosaic', function ($scope, $http, ServerService) {
-        $http.get(ServerService.address + '/api/mosaic/')
-            .then(function (response) {
-                console.log(response);
-                $scope.mosaic = response.data;
-            });
-    })
+    //    .controller('mosaic', function ($scope, $http, ServerService) {
+    //        $http.get(ServerService.address + '/api/mosaic/')
+    //            .then(function (response) {
+    //                console.log(response);
+    //                $scope.mosaic = response.data;
+    //            });
+    //    })
     .controller('event', function ($scope, $http, $routeParams, ServerService) {
         var eventId = $routeParams.id;
         $http.get(ServerService.address + '/api/event/' + eventId + '/')

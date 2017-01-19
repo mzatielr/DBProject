@@ -2,24 +2,24 @@
 <br>
 <table class="table table-hover">
     <tr>
-        <th>מתי האירוע מתקיים?</th>
+        <th>Event schedule</th>
         <td>{{event.start_time}} - {{event.end_time}}</td>
     </tr>
     <tr>
-        <th>קטגוריה</th>
+        <th>Category</th>
         <td>{{event.category_id}}</td>
     </tr>
 </table>
 
-<button type="button" class="btn btn-primary btn-lg" ng-click="updateEvent()">עדכן נתוני האירוע</button>
+<button type="button" class="btn btn-primary btn-lg" ng-click="updateEvent()">Update Counters</button>
 
 
-<h3>הערות</h3>
+<h3>Comments</h3>
 <table class="table table-hover">
     <thead>
         <tr>
-            <th>הערה</th>
-            <th>תאריך</th>
+            <th>Comment</th>
+            <th>Date</th>
         </tr>
     </thead>
     <tbody>
@@ -32,10 +32,10 @@
 
 <form class="form-inline">
     <div class="form-group">
-        <label for="newComment">הערה חדשה</label>
+        <label for="newComment">New Comment</label>
         <input type="text" class="form-control" id="newComment" ng-model="newComment" oninvalid="this.setCustomValidity('חובה למלא הערה')" required>
     </div>
-    <button type="submit" class="btn btn-default" ng-click="sendComment()">שלח הערה</button>
+    <button type="submit" class="btn btn-default" ng-click="sendComment()">Add Comment</button>
 </form>
 
 
@@ -45,10 +45,10 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">הודעה</h4>
+                <h4 class="modal-title" id="myModalLabel">Info</h4>
             </div>
             <div class="modal-body">
-                העדכון בוצע בהצלחה.
+                Update process finished.
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>
@@ -66,7 +66,7 @@
                 <h4 class="modal-title" id="myModalLabel">הודעה</h4>
             </div>
             <div class="modal-body">
-                ההערה נוספה בהצלחה!
+                Comment was added!
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">סגור</button>

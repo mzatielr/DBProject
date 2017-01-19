@@ -1,4 +1,5 @@
-<h2>Search Results</h2>
+<h2>Highest Attending</h2>
+<h4>All events occuring in the same city and at the same month as the highest attending event.</h4>
 <br>
 <table class="table table-hover">
     <thead>
@@ -6,13 +7,17 @@
             <th>Event</th>
             <th>Description</th>
             <th>Category</th>
+            <th>Start Time</th>
+            <th>End Time</th>
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="event in searchResults">
+        <tr ng-repeat="event in data">
             <td><a href="/event/?id={{event.event_id}}">{{event.event_name}}</a></td>
             <td>{{event.event_description}}</td>
             <td>{{event.event_category}}</td>
+            <td>{{event.event_start_time}}</td>
+            <td>{{event.event_end_time}}</td>
         </tr>
     </tbody>
 </table>

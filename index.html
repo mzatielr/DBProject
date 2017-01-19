@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>עכבר הכפר</title>
+    <title>Village Mouse</title>
 
     <base href="/" />
 
@@ -17,7 +17,8 @@
     <script src="lib/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <!-- TODO: delete this -->
+    <!--    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">-->
 
     <!-- The app -->
     <script src="js/mouse.js"></script>
@@ -35,12 +36,12 @@
                 </a>
 
                 <div class="col-md-7">
-                    <h1>  עכבר הכפר</h1>
+                    <h1>  Village Mouse</h1>
                 </div>
                 <div class="col-md-4">
                     <br>
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="חפש את האירועים החמים" ng-model="searchString">
+                        <input type="text" class="form-control" placeholder="Search the hottest events" ng-model="searchString">
                         <span class="input-group-btn" ng-click="search(searchString)">
                             <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                         </button>
@@ -55,12 +56,8 @@
         <div class="container">
             <nav class="navbar-collapse" id="bs-navbar">
                 <ul class="nav navbar-nav navLinks">
-                    <li> <a href="/stats/">השווים</a> </li>
-                    <li> <a href="/city/">העיר החמה</a> </li>
-                    <li> <a href="/components/">מצא אירוע</a> </li>
-                    <li> <a href="/components/">שאילתה נוספת</a> </li>
-                    <li> <a href="/components/">ועוד שאילתה</a> </li>
-                    <li> <a href="/components/">ושאילתה אחרונה</a> </li>
+                    <li> <a href="/hottest_city/">Hottest City</a> </li>
+                    <li> <a href="/highest_attending/">Highest Attending</a> </li>
                 </ul>
             </nav>
         </div>

@@ -1,10 +1,10 @@
 SELECT 
-    Event.id,
-    Event.name,
-    Category.name,
-    Event.description,
-    Event.start_time,
-    Event.end_time
+    Event.id AS event_id,
+    Event.name AS event_name,
+    Category.name AS event_category,	
+    Event.description AS event_description,
+    DATE_FORMAT(Event.start_time,"%e/%c/%Y %H:%i") AS event_start_time,
+    DATE_FORMAT(Event.end_time,"%e/%c/%Y %H:%i") AS event_end_time
 FROM
     Event,
     Category
