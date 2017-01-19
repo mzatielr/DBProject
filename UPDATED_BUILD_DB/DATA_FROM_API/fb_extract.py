@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import sys
+import traceback
 import copy
 import facebook
 import json
@@ -11,43 +12,43 @@ database_hostname = 'localhost'  # For NOVA use: 'mysqlsrv.cs.tau.ac.il'
 
 # A mapping between Facebook Graph API Category ENUMS to our own app's category_id
 categories = {
-                'BOOK_EVENT': 1,
-                'MOVIE_EVENT': 2,
-                'FUNDRAISER': 3,
-                'VOLUNTEERING': 4,
-                'FAMILY_EVENT': 5,
-                'FESTIVAL_EVENT': 6,
-                'NEIGHBORHOOD': 7,
-                'RELIGIOUS_EVENT': 8,
-                'SHOPPING': 9,
-                'COMEDY_EVENT': 10,
-                'MUSIC_EVENT': 11,
-                'DANCE_EVENT': 12,
-                'NIGHTLIFE': 13,
-                'THEATER_EVENT': 14,
-                'DINING_EVENT': 15,
-                'FOOD_TASTING': 16,
-                'CONFERENCE_EVENT': 17,
-                'MEETUP': 18,
-                'CLASS_EVENT': 19,
-                'LECTURE': 20,
-                'WORKSHOP': 21,
-                'FITNESS': 22,
-                'SPORTS_EVENT': 23,
-                'ART_EVENT': 24,
-                'OTHER': 999
+                'BOOK_EVENT': (1, 'Books'),
+                'MOVIE_EVENT': (2, 'Movies'),
+                'FUNDRAISER': (3, 'Fund Raising'),
+                'VOLUNTEERING': (4, 'Volunteering'),
+                'FAMILY_EVENT': (5, 'Family Event'),
+                'FESTIVAL_EVENT': (6, 'Festival'),
+                'NEIGHBORHOOD': (7, 'Neighborhood'),
+                'RELIGIOUS_EVENT': (8, 'Religious'),
+                'SHOPPING': (9, 'Shopping'),
+                'COMEDY_EVENT': (10, 'Comedy'),
+                'MUSIC_EVENT': (11, 'Music'),
+                'DANCE_EVENT': (12, 'Dancing'),
+                'NIGHTLIFE': (13, 'Nightlife'),
+                'THEATER_EVENT': (14, 'Threater'),
+                'DINING_EVENT': (15, 'Dining'),
+                'FOOD_TASTING': (16, 'Food'),
+                'CONFERENCE_EVENT': (17, 'Conference'),
+                'MEETUP': (18, 'Meetup'),
+                'CLASS_EVENT': (19, 'Class Event'),
+                'LECTURE': (20, 'Lecture'),
+                'WORKSHOP': (21, 'Workshop'),
+                'FITNESS': (22, 'Fitness'),
+                'SPORTS_EVENT': (23, 'Sports'),
+                'ART_EVENT': (24, 'Art'),
+                'OTHER': (999, 'Misc')
             }
 
 
 def category_enum_to_id(category_enum):
 
     if category_enum is None:
-        return 777  # Empty facebook ids are represented by special 777 id
+        return 999  # Empty facebook ids are represented by special other id
 
     category_id = categories[category_enum.encode('UTF-8')]
 
     if category_id is None:
-        return 777  # Avoid unknown categories by identifying them as empty as well
+        return 999  # Avoid unknown categories by identifying them as other as well
 
     return category_id
 
@@ -58,21 +59,243 @@ def populate_categories(cur, con):
     category_fields = 'id,  name'
     insert_query = 'INSERT INTO Category (' + category_fields + ') VALUES (%s, %s)'
 
-    for category_name, category_id in categories.iteritems():
+    for category_name, (category_id, category_title) in categories.iteritems():
         parameters = (long(category_id),
-                      category_name.encode('UTF-8'))
-        cur.execute(insert_query, parameters)
+                      category_title.encode('UTF-8'))
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Category entry: " + str(category_id))
+
     con.commit()
+
+
+def populate_timezones(cur, con, timezones):
+    """ Populates the database with street entities """
+
+    for timezone_name, timezone_id in timezones.iteritems():
+        timezone_fields = 'id,  timezone'
+        insert_query = 'INSERT INTO Timezone (' + timezone_fields + ') VALUES (%s, %s)'
+
+        parameters = (long(timezone_id),
+                      timezone_name.encode('UTF-8') if timezone_name is not None else None)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Timezone entry: " + str(timezone_id))
+
+    con.commit()
+
+
+def populate_streets(cur, con, streets):
+    """ Populates the database with street entities """
+
+    for street_key, (street_id, location_street) in streets.iteritems():
+        street_fields = 'id,  name'
+        insert_query = 'INSERT INTO Street (' + street_fields + ') VALUES (%s, %s)'
+
+        parameters = (long(street_id),
+                      location_street.encode('UTF-8') if location_street is not None else None)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Street entry: " + str(street_id))
+
+    con.commit()
+
+
+def populate_places(cur, con, places):
+    """ Populates the database with place entities """
+
+    for place_id, (place_name, street_id, location_city_id, location_country_code, \
+             location_zipcode, location_latitude, location_longitude) in places.iteritems():
+
+        place_fields = 'id,  name, street_id, city_id, country_id, zip, latitude, longitude'
+        insert_query = 'INSERT INTO Place (' + place_fields + ') VALUES (%s, %s, %s, %s, %s, %s, %s, %s)'
+
+        parameters = (long(place_id),
+                      place_name.encode('UTF-8') if place_name is not None else None,
+                      long(street_id),
+                      long(location_city_id),
+                      long(location_country_code),
+                      location_zipcode,
+                      location_latitude,
+                      location_longitude)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Place entry: " + str(place_id))
+
+    con.commit()
+
+
+def populate_cities(cur, con, cities):
+    """ Populates the database with city entities """
+
+    for location_city_id, (location_city, location_country_code) in cities.iteritems():
+        city_fields = 'id,  name, country_id'
+        insert_query = 'INSERT INTO City (' + city_fields + ') VALUES (%s, %s, %s)'
+
+        parameters = (long(location_city_id),
+                      location_city.encode('UTF-8') if location_city is not None else None,
+                      long(location_country_code))
+        cur.execute(insert_query, parameters)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate City entry: " + str(location_city_id))
+
+    con.commit()
+
+
+def populate_countries(cur, con, countries):
+    """ Populates the database with country entities """
+
+    for location_country, country_id in countries.iteritems():
+        country_fields = 'id,  name'
+        insert_query = 'INSERT INTO Country (' + country_fields + ') VALUES (%s, %s)'
+
+        parameters = (long(country_id),
+                      location_country.encode('UTF-8') if location_country is not None else None)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Country entry: " + str(country_id))
+
+    con.commit()
+
+
+def populate_owners(cur, con, owners):
+    """ Populates the database with owner entities """
+
+    for owner_id, owner_name in owners.iteritems():
+        owner_fields = 'id,  name'
+        insert_query = 'INSERT INTO Owner (' + owner_fields + ') VALUES (%s, %s)'
+
+        parameters = (long(owner_id),
+                      owner_name.encode('UTF-8') if owner_name is not None else None)
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Owner entry: " + str(owner_id))
+
+    con.commit()
+
+
+def populate_events(cur, con, events):
+    """ Populates the database with the category names and ids """
+
+    for event_id, (event_attending_count, event_declined_count, event_maybe_count,event_interested_count, \
+            event_noreply_count, event_is_canceled, event_description, event_category, event_owner_id, place_id, \
+            event_can_guests_invite, cover_url, event_guest_list_enabled, cover_id, cover_offset_x, cover_offset_y, \
+            event_start_time, event_name, event_end_time, event_updated_time, event_timezone, event_type) \
+            in events.iteritems():
+
+        event_fields = 'id,  attending_count, declined_count, maybe_count, interested_count, ' \
+                       'noreply_count, is_canceled, description, category_id, owner_id, place_id, ' \
+                       'can_guest_invite, cover_source, guest_list_enabled, cover_id, ' \
+                       'cover_offset_x, cover_offset_y, start_time, name, ' \
+                       'end_time, update_time, timezone_id, event_type'
+
+        # MSQLdb doesn't treat this string as a normal Python SQL string, so all fields are considered %s
+        # (this is not a mistake..)
+        insert_query = 'INSERT INTO Event (' + event_fields + ') ' \
+                       'VALUES (%s, %s, %s, %s, %s, %s, %s, ' \
+                       '%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ' \
+                       '%s, %s, %s, %s, %s, %s)'
+
+        parameters = (long(event_id),
+                      event_attending_count,
+                      event_declined_count,
+                      event_maybe_count,
+                      event_interested_count,
+                      event_noreply_count,
+                      event_is_canceled,
+                      event_description.encode('UTF-8') if event_description is not None else None,
+                      category_enum_to_id(event_category),
+                      long(event_owner_id) if event_owner_id is not None else 0,
+                      long(place_id) if place_id is not None else 0,
+                      event_can_guests_invite,
+                      cover_url.encode('UTF-8') if cover_url is not None else None,
+                      event_guest_list_enabled,
+                      long(cover_id) if cover_id is not None else 0,
+                      cover_offset_x,
+                      cover_offset_y,
+                      str(event_start_time),
+                      event_name.encode('UTF-8') if event_name is not None else None,
+                      str(event_end_time),
+                      str(event_updated_time),
+                      str(event_timezone),  # string
+                      event_type.encode('UTF-8') if event_type is not None else None)
+
+        try:
+            cur.execute(insert_query, parameters)
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Event entry: " + str(event_id))
+
+    con.commit()
+
+
+def populate_comments(cur, con, comments):
+    """ Populates the database with comment entities """
+
+    # Facebook's comment id is a string, we want ids to be integers so we generate our own sequential ids for
+    # comments.
+    comment_id = 100000;
+
+    for fb_comment_id, (comment_msg, comment_time, event_id) in comments.iteritems():
+        comment_fields = 'id,  message, updated_time, event_id'
+        insert_query = 'INSERT INTO Comment (' + comment_fields + ') VALUES (%s, %s, %s, %s)'
+
+        parameters = (comment_id,
+                      comment_msg.encode('UTF-8') if comment_msg is not None else None,
+                      str(comment_time),
+                      event_id)
+        try:
+            cur.execute(insert_query, parameters)
+            comment_id += 1
+        except MySQLdb.IntegrityError:
+            print("Skipping duplicate Comment entry: " + str(comment_id))
+
+    con.commit()
+
 
 def populate_db():
 
     with open('data.json', 'r') as data_file:
         data = json.load(data_file)
 
-        # Connect to Database
+        # Connect to Database - we test the connection as early as possible.
+        # We don't mind holding the connection open during parsing of Json files
+        # since this is a one-time operation (in production code that runs on
+        # the web-server we wouldn't do that, since that might create a bottleneck).
         con = MySQLdb.connect(database_hostname, 'DbMysql08', 'DbMysql08', 'DbMysql08')
         with con:
             cur = con.cursor(MySQLdb.cursors.DictCursor)
+
+            populate_categories(cur, con)  # Populate Category table
+
+            # These dictionaries accumulate meta data that multiple events may share, so we cache it until we're
+            # done iterating our fetched events and comments.
+            # Why we keep data in dictionaries: we want to avoid duplicate entries in the database.
+            # Although the columns are defined as "UNIQUE" in sql, inserting duplicate primary keys will
+            # trigger an integrity error, which we may catch and ignore.
+            # Another alternative is do execute a COUNT query every time we want to insert a new city / country / etc
+            # and check if it already exists in the database.
+            # Both methods may prolong the population process since we execute additional queries to the db.
+            # Instead we chose a simple solution of caching and inserting all at once.
+            # Our chosen method requires modifications if it scales to huge amounts of data
+            # (program may run out of heap memory, etc).
+            places = {}
+            streets = {}
+            cities = {}
+            countries = {}
+            timezones = {}
+            owners = {}
+
+            # Also cache events and comments due to foreign key constraints. Must build above entities first.
+            comments = {}
+            events = {}
 
             # See types of event fields here:
             # https://developers.facebook.com/docs/graph-api/reference/event/
@@ -120,7 +343,6 @@ def populate_db():
                     place_id = event['place'].get('id', None)
                     place_name = event['place'].get('name', None)
                     place_rating = event['place'].get('overall_rating', None)
-                    place_id = event['place'].get('id', None)
 
                     # Each place has a location, which describes it's geographical data
                     if 'location' in event['place']:
@@ -172,73 +394,148 @@ def populate_db():
                 try:
                     with open('COMMENTS/' + event_id + '_comments.json', 'r') as comments_file:
                         comments_data = json.load(comments_file)
-                        for comment in comments_data['data']:
-                            if 'message' not in comment:
-                                continue  # Ignore comments with no text for our purpose
-                            comment_id = comment['id']  # Comment id, unique for each comment
-                            comment_msg = comment['message']  # Comment message data
-                            comment_time = comment['updated_time']  # Comment update time
+                        if (comments_data is not None) and\
+                           (len(comments_data['data']) > 0):
+                            for comment in comments_data['data']:
+                                if 'message' not in comment:
+                                    continue  # Ignore comments with no text for our purpose
+                                comment_id = comment['id']  # Comment id, unique for each comment
+                                comment_msg = comment['message']  # Comment message data
+                                comment_time = comment['updated_time']  # Comment update time
+
+                                if (comment_id not in comments) and (comment_id is not None):
+                                    comments[comment_id] = (comment_msg, comment_time, event_id)
                 except:
-                    comment_id = None
-                    comment_msg = None
-                    comment_time = None
+                    pass  # Silently ignore, some events have no comment files
 
-                # ===============================================================
-                # -------- Database populated from this point onwards -----------
-                # ===============================================================
+                # Country codes are no longer retrieved by facebook.
+                # We have to generate an ide of our own instead..
+                if (location_country not in countries) and (location_country is not None):
+                    country_id = len(countries)
+                    countries[location_country] = country_id
 
-                populate_categories(cur, con)  # Populate Category table
+                # Some attributes are not assigned ids by facebook so we have to assign them by ourselves.
+                # The first time we populate the database, we treat those names as "keys" that belong to the same
+                # ids in the database. In reality, the moment we're done populating the database, these names are
+                # no longer keys and users may add additional streets with similar names (but not the
+                # same ids).
+                street_key = (location_country_code, location_city_id, location_street)
+                if (street_key not in streets) and (location_country_code is not None) \
+                        and (location_city_id is not None) and (location_street is not None):
+                    street_id = len(streets)
+                    streets[street_key] = (street_id, location_street)  # Assign sequential ids
 
-                # Populate Event table
-                event_fields = 'id,  attending_count, declined_count, maybe_count, interested_count, ' \
-                               'noreply_count, is_canceled, description, category_id, owner_id, place_id, ' \
-                               'can_guest_invite, cover_source, guest_list_enabled, cover_id, ' \
-                               'cover_offset_x, cover_offset_y, start_time, name, ' \
-                               'end_time, update_time, timezone_id, event_type'
+                if (location_city_id not in cities) and (location_city_id is not None):
+                    cities[location_city_id] = (location_city, location_country_code)
 
-                insert_query = 'INSERT INTO Event (' + event_fields + ') ' \
-                               'VALUES (%s, %s, %s, %s, %s, %s, %s, ' \
-                               '%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, ' \
-                               '%s, %s, %s, %s, %s, %s)'
+                if (place_id not in places) and (place_id is not None):
+                    is_key_valid = (location_country_code is not None) \
+                        and (location_city_id is not None) and (location_street is not None)
+                    street_id = streets[street_key][0] if is_key_valid else -1
+                    country_id = countries[location_country] if location_country in countries else -1
+                    city_id = cities[location_city_id] if location_city_id in cities else -1
+                    places[place_id] = (place_name, street_id, city_id, country_id, \
+                                        location_zipcode, location_latitude, location_longitude)
 
-                parameters = (long(event_id),
-                              event_attending_count,
-                              event_declined_count,
-                              event_maybe_count,
-                              event_interested_count,
-                              event_noreply_count,
-                              event_is_canceled,
-                              event_description.encode('UTF-8') if event_description is not None else None,
-                              category_enum_to_id(event_category),
-                              long(event_owner_id) if event_owner_id is not None else 0,
-                              long(place_id) if place_id is not None else 0,
-                              event_can_guests_invite,
-                              cover_url.encode('UTF-8') if cover_url is not None else None,
-                              event_guest_list_enabled,
-                              long(cover_id) if cover_id is not None else 0,
-                              cover_offset_x,
-                              cover_offset_y,
-                              str(event_start_time),
-                              event_name.encode('UTF-8') if event_name is not None else None,
-                              str(event_end_time),
-                              str(event_updated_time),
-                              str(event_timezone),  # string
-                              event_type.encode('UTF-8'))
-                cur.execute(insert_query, parameters)
+                if (event_timezone not in timezones) and (event_timezone is not None):
+                    timezones[event_timezone] = len(timezones)  # Assign sequential ids
 
-        con.commit()
+                if (event_owner_id not in owners) and (event_owner_id is not None):
+                    owners[event_owner_id] = event_owner_name
 
-        # ===========================================================
-        # Example of usage: --- (delete this, replace with SQL:)
-        # print('Event name: ' + event_name)
-        # print('Event category: ' + (' None' if event_category is None else event_category))
-        # print('Place name: ' + (' None' if place_name is None else place_name.encode('utf8')))
-        # print('Location city: ' + (' None' if location_city is None else location_city.encode('utf8')))
-        # if(comments_data is not None):
-        #	if(len(comments_data['data'])>0):
-        #		if(comments_data['data'][0].get('message',None) is not None):
-        #			#print('Top comment: ' + comments_data['data'][0].get('message',None).encode('utf8'))
-        # print()
+                if event_id is not None:
+                    events[event_id] = (event_attending_count,
+                                        event_declined_count,
+                                        event_maybe_count,
+                                        event_interested_count,
+                                        event_noreply_count,
+                                        event_is_canceled,
+                                        event_description,
+                                        event_category,
+                                        event_owner_id,
+                                        place_id,
+                                        event_can_guests_invite,
+                                        cover_url,
+                                        event_guest_list_enabled,
+                                        cover_id,
+                                        cover_offset_x,
+                                        cover_offset_y,
+                                        event_start_time,
+                                        event_name,
+                                        event_end_time,
+                                        event_updated_time,
+                                        event_timezone,
+                                        event_type)
+
+            # ================================================================
+            # ---- Most of the database populated from this point onwards ----
+            # ================================================================
+
+            try:
+                populate_comments(cur, con, comments)
+            except Exception as err:
+                print('Error populating comment entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_countries(cur, con, countries)
+            except Exception as err:
+                print('Error populating country entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_cities(cur, con, cities)
+            except Exception as err:
+                print('Error populating city entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_streets(cur, con, streets)
+            except Exception as err:
+                print('Error populating street entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_places(cur, con, places)
+            except Exception as err:
+                print('Error populating place entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_timezones(cur, con, timezones)
+            except Exception as err:
+                print('Error populating timezone entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_owners(cur, con, owners)
+            except Exception as err:
+                print('Error populating owner entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_events(cur, con, events)
+            except Exception as err:
+                print('Error populating event entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+            try:
+                populate_comments(cur, con, comments)
+            except Exception as err:
+                print('Error populating comment entities')
+                tb = traceback.format_exc()
+                print(tb)
+
+        print('Database population process done!')
+
 
 def extract_data():
     '''
@@ -246,7 +543,7 @@ def extract_data():
     '''
 
     # Get access token from: https://developers.facebook.com/tools/debug/accesstoken/
-    user_token = 'EAACtNKrCNh8BAHUsS3u9xUU7F4lKFcmkZC4WzNueIu1JaVFMfhqiIBNxeGHqRE3hrjYqjIiF9ajzRumlNNK61Taq9gRESIfV6kDC7Hmrmb02Yf5FM0A2dgPuBjkwUglBjZBL3xT2BZCBZAGfq0b1MW0ZAFkdlUzPpnkX6h74usAZDZD'
+    user_token = 'EAACtNKrCNh8BAIHHYHbnBvcZAI0KRnXSiv1o1iQ01nsW0rYZB7a4romSG6tJbLAPKRlef4lCcUkvpICEpfMaGJ0L'
     app_token = '190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4'
     graph = facebook.GraphAPI(access_token=app_token, version='2.2')
 
