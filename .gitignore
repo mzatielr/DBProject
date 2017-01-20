@@ -1,0 +1,4 @@
+*.json
+UPDATED_BUILD_DB/DATA_FROM_API/.idea/DATA_FROM_API.iml
+*.xml
+UPDATED_BUILD_DB/DATA_FROM_API/sandbox.py
