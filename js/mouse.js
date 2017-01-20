@@ -65,13 +65,6 @@ angular.module('mouse.controllers', [])
                 });
         }
     })
-    //    .controller('mosaic', function ($scope, $http, ServerService) {
-    //        $http.get(ServerService.address + '/api/mosaic/')
-    //            .then(function (response) {
-    //                console.log(response);
-    //                $scope.mosaic = response.data;
-    //            });
-    //    })
     .controller('event', function ($scope, $http, $routeParams, ServerService) {
         var eventId = $routeParams.id;
         $http.get(ServerService.address + '/api/event/' + eventId + '/')

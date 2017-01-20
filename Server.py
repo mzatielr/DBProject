@@ -20,25 +20,6 @@ def serveStatic(folder, fileName):
     
     return "404"
 
-@app.route("/api/mosaic/")
-def mosaic():
-    l = []
-    l.append({"event_id": 1, "event_category": "ART_EVENT", "event_name": "אומנות בכיכר1111", "event_description":"אומנות בכיכר הוא אירוע מיוחד במינו שקורה פעם בשנה בו עושים מלא מלא מלא אומנות בכיכר"})
-    l.append({"event_id": 1, "event_category": "FOOD_TASTING", "event_name": "פסטיבל האוכל", "event_description":
-              "מלא מלא אוכל בלה בלה בלה אוכל בלה אוכל."})    
-    l.append({"event_id": 1, "event_category": "ART_EVENT", "event_name": "אומנות בכיכר", "event_description":"אומנות בכיכר הוא אירוע מיוחד במינו שקורה פעם בשנה בו עושים מלא מלא מלא אומנות בכיכר"})
-    l.append({"event_id": 1, "event_category": "MOVIES_EVENT", "event_name": "ספרים רבותיי", "event_description":
-              "מה עוד נאמר על עם הספר..."})
-    l.append({"event_id": 1, "event_category": "FOOD_TASTING", "event_name": "פסטיבל האוכל", "event_description":
-              "מלא מלא אוכל בלה בלה בלה אוכל בלה אוכל."})    
-    l.append({"event_id": 1, "event_category": "NIGHTLIFE", "event_name": "אומנות בכיכר", "event_description":"אומנות בכיכר הוא אירוע מיוחד במינו שקורה פעם בשנה בו עושים מלא מלא מלא אומנות בכיכר"})
-    l.append({"event_id": 1, "event_category": "BOOK_EVENT", "event_name": "ספרים רבותיי", "event_description":
-              "מה עוד נאמר על עם הספר..."})
-    l.append({"event_id": 1, "event_category": "SPORTS_EVENT", "event_name": "11פסטיבל האוכל", "event_description":
-              "מלא מלא אוכל בלה בלה בלה אוכל בלה אוכל."})    
-    
-    return jsonify(l)
-
 @app.route("/api/query/<query_name>/")
 def query(query_name):
     if query_name in ("highest_attending", "hottest_city", "mosaic"):
@@ -62,11 +43,11 @@ def event(event_id):
 
 @app.route("/api/event/<event_id>/comments/")
 def comments(event_id):
-#    cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
-#    cur.execute("SELECT * FROM Comment WHERE event_id = %s ORDER BY updated_time DESC", (event_id,))
-#    event = cur.fetchall()
-#    return jsonify(event) 
-    return ""
+    cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
+    print event_id
+    cur.execute("SELECT * FROM Comment WHERE event_id = %s ORDER BY updated_time DESC", (event_id,))
+    event = cur.fetchall()
+    return jsonify(event)
 
 @app.route("/api/event/<event_id>/comments/add/", methods=['POST'])
 def addComment(event_id):
@@ -76,15 +57,6 @@ def addComment(event_id):
     cur = MySQLConn.cursor(MySQLdb.cursors.DictCursor)
     cur.execute("INSERT INTO Comment (message, event_id) VALUES (%s, %s)", (newComment, event_id,))
     return "DONE"
-
-@app.route("/api/city/")
-def city():
-    events = []
-    events.append({"city_name": "Tel-Aviv", "event_id": 1, "event_category": "ART_EVENT", "event_name": "אומנות בכיכר1111", "event_description":"אומנות בכיכר הוא אירוע מיוחד במינו שקורה פעם בשנה בו עושים מלא מלא מלא אומנות בכיכר"})
-    
-    d = {"city_name": "Tel-Aviv", "events": events}
-    
-    return jsonify(d)
 
 @app.route("/api/search/", methods=['POST'])
 def search():
@@ -119,10 +91,10 @@ if __name__ == "__main__":
         
     while True:
         try:
-            MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08')
+            MySQLConn = MySQLdb.connect('mysqlsrv.cs.tau.ac.il', 'DbMysql08', 'DbMysql08', 'DbMysql08', charset="utf8")
             MySQLConn.autocommit(True)
 
-            app.run(host='0.0.0.0', port=port, threaded=True, debug=True)
+            app.run(host='0.0.0.0', port=port, threaded=False, debug=True)
         except MySQLdb.Error, e:
             print "MySQL Error %d: %s" % (e.args[0],e.args[1])
         except:
