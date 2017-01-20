@@ -7,6 +7,8 @@ import copy
 import facebook
 import json
 import MySQLdb
+from requests.exceptions import ConnectionError
+import time
 
 database_hostname = 'localhost'  # For NOVA use: 'mysqlsrv.cs.tau.ac.il'
 
@@ -173,6 +175,8 @@ def populate_countries(cur, con, countries):
 def populate_owners(cur, con, owners):
     """ Populates the database with owner entities """
 
+    batch_size = 0
+
     print('Populating owners..')
     for owner_id, owner_name in owners.iteritems():
         owner_fields = 'id,  name'
@@ -182,14 +186,23 @@ def populate_owners(cur, con, owners):
                       owner_name.encode('UTF-8') if owner_name is not None else None)
         try:
             cur.execute(insert_query, parameters)
+            batch_size += 1
         except MySQLdb.IntegrityError:
             print("Skipping duplicate Owner entry: " + str(owner_id))
 
-    con.commit()
+        # Commit in batches, to avoid errors on huge commits that may waste time..
+        if batch_size >= 1000:
+            con.commit()
+            batch_size = 0
+
+    if batch_size > 0:
+        con.commit()
 
 
 def populate_events(cur, con, events):
     """ Populates the database with the category names and ids """
+
+    batch_size = 0
 
     print('Populating events..')
     for event_id, (event_attending_count, event_declined_count, event_maybe_count,event_interested_count, \
@@ -237,16 +250,25 @@ def populate_events(cur, con, events):
 
         try:
             cur.execute(insert_query, parameters)
+            batch_size += 1
         except MySQLdb.IntegrityError:
             print("Skipping duplicate Event entry: " + str(event_id))
             tb = traceback.format_exc()
             print(tb)
 
-    con.commit()
+        # Commit in batches, to avoid errors on huge commits that may waste time..
+        if batch_size >= 1000:
+            con.commit()
+            batch_size = 0
+
+    if batch_size > 0:
+        con.commit()
 
 
 def populate_comments(cur, con, comments):
     """ Populates the database with comment entities """
+
+    batch_size = 0
 
     print('Populating comments..')
     for comment_id, (comment_msg, comment_time, event_id) in comments.iteritems():
@@ -259,48 +281,52 @@ def populate_comments(cur, con, comments):
                       event_id)
         try:
             cur.execute(insert_query, parameters)
+            batch_size += 1
         except MySQLdb.IntegrityError:
             print("Skipping duplicate Comment entry: " + str(comment_id))
 
-    con.commit()
+        # Commit in batches, to avoid errors on huge commits that may waste time..
+        if batch_size >= 1000:
+            con.commit()
+            batch_size = 0
+
+    if batch_size > 0:
+        con.commit()
 
 
 def populate_db():
 
-    with open('data.json', 'r') as data_file:
-        data = json.load(data_file)
+    # Connect to Database - we test the connection as early as possible.
+    # We don't mind holding the connection open during parsing of Json files
+    # since this is a one-time operation (in production code that runs on
+    # the web-server we wouldn't do that, since that might create a bottleneck).
+    con = MySQLdb.connect(database_hostname, 'DbMysql08', 'DbMysql08', 'DbMysql08', charset='utf8')
+    with con:
 
-        # Connect to Database - we test the connection as early as possible.
-        # We don't mind holding the connection open during parsing of Json files
-        # since this is a one-time operation (in production code that runs on
-        # the web-server we wouldn't do that, since that might create a bottleneck).
-        con = MySQLdb.connect(database_hostname, 'DbMysql08', 'DbMysql08', 'DbMysql08', charset='utf8')
-        with con:
-            cur = con.cursor(MySQLdb.cursors.DictCursor)
+        # These dictionaries accumulate meta data that multiple events may share, so we cache it until we're
+        # done iterating our fetched events and comments.
+        # Why we keep data in dictionaries: we want to avoid duplicate entries in the database.
+        # Although the columns are defined as "UNIQUE" in sql, inserting duplicate primary keys will
+        # trigger an integrity error, which we may catch and ignore.
+        # Another alternative is do execute a COUNT query every time we want to insert a new city / country / etc
+        # and check if it already exists in the database.
+        # Both methods may prolong the population process since we execute additional queries to the db.
+        # Instead we chose a simple solution of caching and inserting all at once.
+        # Our chosen method requires modifications if it scales to huge amounts of data
+        # (program may run out of heap memory, etc).
+        places = {}
+        streets = {}
+        cities = {}
+        countries = {}
+        timezones = {}
+        owners = {}
 
-            populate_categories(cur, con)  # Populate Category table
+        # Also cache events and comments due to foreign key constraints. Must build above entities first.
+        comments = {}
+        events = {}
 
-            # These dictionaries accumulate meta data that multiple events may share, so we cache it until we're
-            # done iterating our fetched events and comments.
-            # Why we keep data in dictionaries: we want to avoid duplicate entries in the database.
-            # Although the columns are defined as "UNIQUE" in sql, inserting duplicate primary keys will
-            # trigger an integrity error, which we may catch and ignore.
-            # Another alternative is do execute a COUNT query every time we want to insert a new city / country / etc
-            # and check if it already exists in the database.
-            # Both methods may prolong the population process since we execute additional queries to the db.
-            # Instead we chose a simple solution of caching and inserting all at once.
-            # Our chosen method requires modifications if it scales to huge amounts of data
-            # (program may run out of heap memory, etc).
-            places = {}
-            streets = {}
-            cities = {}
-            countries = {}
-            timezones = {}
-            owners = {}
-
-            # Also cache events and comments due to foreign key constraints. Must build above entities first.
-            comments = {}
-            events = {}
+        with open('data.json', 'r') as data_file:
+            data = json.load(data_file)
 
             # See types of event fields here:
             # https://developers.facebook.com/docs/graph-api/reference/event/
@@ -478,68 +504,78 @@ def populate_db():
             # ---- Most of the database populated from this point onwards ----
             # ================================================================
 
-            try:
-                populate_events(cur, con, events)
-            except Exception as err:
-                print('Error populating event entities')
-                tb = traceback.format_exc()
-                print(tb)
+        # Create cursor for executing INSERT queries..
+        cur = con.cursor(MySQLdb.cursors.DictCursor)
 
-            try:
-                populate_countries(cur, con, countries)
-            except Exception as err:
-                print('Error populating country entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_categories(cur, con)  # Populate Category table
+        except Exception as err:
+            print('Error populating categories entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_cities(cur, con, cities)
-            except Exception as err:
-                print('Error populating city entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_events(cur, con, events)
+        except Exception as err:
+            print('Error populating event entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_streets(cur, con, streets)
-            except Exception as err:
-                print('Error populating street entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_countries(cur, con, countries)
+        except Exception as err:
+            print('Error populating country entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_places(cur, con, places)
-            except Exception as err:
-                print('Error populating place entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_cities(cur, con, cities)
+        except Exception as err:
+            print('Error populating city entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_timezones(cur, con, timezones)
-            except Exception as err:
-                print('Error populating timezone entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_streets(cur, con, streets)
+        except Exception as err:
+            print('Error populating street entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_owners(cur, con, owners)
-            except Exception as err:
-                print('Error populating owner entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_places(cur, con, places)
+        except Exception as err:
+            print('Error populating place entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_events(cur, con, events)
-            except Exception as err:
-                print('Error populating event entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_timezones(cur, con, timezones)
+        except Exception as err:
+            print('Error populating timezone entities')
+            tb = traceback.format_exc()
+            print(tb)
 
-            try:
-                populate_comments(cur, con, comments)
-            except Exception as err:
-                print('Error populating comment entities')
-                tb = traceback.format_exc()
-                print(tb)
+        try:
+            populate_owners(cur, con, owners)
+        except Exception as err:
+            print('Error populating owner entities')
+            tb = traceback.format_exc()
+            print(tb)
+
+        try:
+            populate_events(cur, con, events)
+        except Exception as err:
+            print('Error populating event entities')
+            tb = traceback.format_exc()
+            print(tb)
+
+        try:
+            populate_comments(cur, con, comments)
+        except Exception as err:
+            print('Error populating comment entities')
+            tb = traceback.format_exc()
+            print(tb)
 
         print('Database population process done!')
 
@@ -550,9 +586,12 @@ def extract_data():
     '''
 
     # Get access token from: https://developers.facebook.com/tools/debug/accesstoken/
-    user_token = 'EAACtNKrCNh8BAIHHYHbnBvcZAI0KRnXSiv1o1iQ01nsW0rYZB7a4romSG6tJbLAPKRlef4lCcUkvpICEpfMaGJ0L'
+    user_token = 'EAACtNKrCNh8BAPnr7PyzbBaJcwNq4ZA9h3KCGSRGXZBDbJZAZCt3pvWPcmWhjiz3KToTcZBv6zO4ttZCZCLZAElmaTiyQ93kg55kVqhZAVI4A0ko9VEZBmz12eykuwdUX2247W1jeVCC3BpwkBoIgE61ZA7GSYuN8ElSiMZD'
     app_token = '190441714759199|QdoMmLvHYEUzSeeLyPK4Awg6Zv4'
     graph = facebook.GraphAPI(access_token=app_token, version='2.2')
+
+    print('Connected successfully to Facebook-GraphAPI..')
+    print('Initiating event search queries by keywords:')
 
     event_ids = []
     with open('keywords.txt') as keywords_file:
@@ -568,6 +607,8 @@ def extract_data():
                     event_ids.append(event_id)
 
     events = None
+
+    print('Fetching comments from feed of each event..:')
 
     # A maximum of 50 ids is allowed per query, divide to multiple queries
     while len(event_ids) > 0:
@@ -594,6 +635,31 @@ def extract_data():
                     json.dump(comments, comments_file, sort_keys=True, indent=4)
             except facebook.GraphAPIError:
                 continue
+            except ConnectionError:
+                # Could happen when we exceed the max retries count..
+                # Rest for one minute, then continue trying..
+                print('Max retries exceeded with url.. Resting for 1 minute before retrying..')
+                time.sleep(60)
+                print('Retrying to fetch comments..')
+                try:
+                    # Ignore paging, fetch only a single page of comments
+                    comments = graph.get_connections(id=event_id, connection_name='feed')
+                    with open(event_id + '_comments.json', 'w') as comments_file:
+                        json.dump(comments, comments_file, sort_keys=True, indent=4)
+                except facebook.GraphAPIError:
+                    print ('Facebook-graph error on feed for event: ' + str(event_id))
+                    tb = traceback.format_exc()
+                    print(tb)
+                    continue
+                except Exception:
+                    print('General error on feed for event ' + str(event_id) + '.. Could not retry :(')
+                    print('Proceeding to dump data.json, some comments may be missing')
+                    tb = traceback.format_exc()
+                    print(tb)
+            except Exception:
+                print('General error on feed for event ' + str(event_id))
+                print('Proceeding to dump data.json, some comments may be missing')
+
 
         event_ids = event_ids[50:]
 
