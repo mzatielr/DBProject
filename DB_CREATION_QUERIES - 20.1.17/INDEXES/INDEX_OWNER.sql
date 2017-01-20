@@ -1,0 +1,1 @@
+CREATE INDEX ownerIdIndex ON Owner(id);
