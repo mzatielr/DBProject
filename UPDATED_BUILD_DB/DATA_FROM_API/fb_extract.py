@@ -45,7 +45,7 @@ def category_enum_to_id(category_enum):
     if category_enum is None:
         return 999  # Empty facebook ids are represented by special other id
 
-    category_id = categories[category_enum.encode('UTF-8')]
+    category_id, category_name = categories[category_enum.encode('UTF-8')]
 
     if category_id is None:
         return 999  # Avoid unknown categories by identifying them as other as well
@@ -56,6 +56,7 @@ def category_enum_to_id(category_enum):
 def populate_categories(cur, con):
     """ Populates the database with the category names and ids """
 
+    print('Populating categories..')
     category_fields = 'id,  name'
     insert_query = 'INSERT INTO Category (' + category_fields + ') VALUES (%s, %s)'
 
@@ -73,6 +74,7 @@ def populate_categories(cur, con):
 def populate_timezones(cur, con, timezones):
     """ Populates the database with street entities """
 
+    print('Populating tiemzones..')
     for timezone_name, timezone_id in timezones.iteritems():
         timezone_fields = 'id,  timezone'
         insert_query = 'INSERT INTO Timezone (' + timezone_fields + ') VALUES (%s, %s)'
@@ -90,6 +92,7 @@ def populate_timezones(cur, con, timezones):
 def populate_streets(cur, con, streets):
     """ Populates the database with street entities """
 
+    print('Populating streets..')
     for street_key, (street_id, location_street) in streets.iteritems():
         street_fields = 'id,  name'
         insert_query = 'INSERT INTO Street (' + street_fields + ') VALUES (%s, %s)'
@@ -107,6 +110,7 @@ def populate_streets(cur, con, streets):
 def populate_places(cur, con, places):
     """ Populates the database with place entities """
 
+    print('Populating places..')
     for place_id, (place_name, street_id, location_city_id, location_country_code, \
              location_zipcode, location_latitude, location_longitude) in places.iteritems():
 
@@ -132,18 +136,18 @@ def populate_places(cur, con, places):
 def populate_cities(cur, con, cities):
     """ Populates the database with city entities """
 
-    for location_city_id, (location_city, location_country_code) in cities.iteritems():
+    print('Populating cities..')
+    for location_city, (city_id, country_id) in cities.iteritems():
         city_fields = 'id,  name, country_id'
         insert_query = 'INSERT INTO City (' + city_fields + ') VALUES (%s, %s, %s)'
 
-        parameters = (long(location_city_id),
+        parameters = (long(city_id),
                       location_city.encode('UTF-8') if location_city is not None else None,
-                      long(location_country_code))
-        cur.execute(insert_query, parameters)
+                      long(country_id))
         try:
             cur.execute(insert_query, parameters)
         except MySQLdb.IntegrityError:
-            print("Skipping duplicate City entry: " + str(location_city_id))
+            print("Skipping duplicate City entry: " + str(city_id))
 
     con.commit()
 
@@ -151,6 +155,7 @@ def populate_cities(cur, con, cities):
 def populate_countries(cur, con, countries):
     """ Populates the database with country entities """
 
+    print('Populating countries..')
     for location_country, country_id in countries.iteritems():
         country_fields = 'id,  name'
         insert_query = 'INSERT INTO Country (' + country_fields + ') VALUES (%s, %s)'
@@ -168,6 +173,7 @@ def populate_countries(cur, con, countries):
 def populate_owners(cur, con, owners):
     """ Populates the database with owner entities """
 
+    print('Populating owners..')
     for owner_id, owner_name in owners.iteritems():
         owner_fields = 'id,  name'
         insert_query = 'INSERT INTO Owner (' + owner_fields + ') VALUES (%s, %s)'
@@ -185,6 +191,7 @@ def populate_owners(cur, con, owners):
 def populate_events(cur, con, events):
     """ Populates the database with the category names and ids """
 
+    print('Populating events..')
     for event_id, (event_attending_count, event_declined_count, event_maybe_count,event_interested_count, \
             event_noreply_count, event_is_canceled, event_description, event_category, event_owner_id, place_id, \
             event_can_guests_invite, cover_url, event_guest_list_enabled, cover_id, cover_offset_x, cover_offset_y, \
@@ -232,6 +239,8 @@ def populate_events(cur, con, events):
             cur.execute(insert_query, parameters)
         except MySQLdb.IntegrityError:
             print("Skipping duplicate Event entry: " + str(event_id))
+            tb = traceback.format_exc()
+            print(tb)
 
     con.commit()
 
@@ -239,11 +248,8 @@ def populate_events(cur, con, events):
 def populate_comments(cur, con, comments):
     """ Populates the database with comment entities """
 
-    # Facebook's comment id is a string, we want ids to be integers so we generate our own sequential ids for
-    # comments.
-    comment_id = 100000;
-
-    for fb_comment_id, (comment_msg, comment_time, event_id) in comments.iteritems():
+    print('Populating comments..')
+    for comment_id, (comment_msg, comment_time, event_id) in comments.iteritems():
         comment_fields = 'id,  message, updated_time, event_id'
         insert_query = 'INSERT INTO Comment (' + comment_fields + ') VALUES (%s, %s, %s, %s)'
 
@@ -253,7 +259,6 @@ def populate_comments(cur, con, comments):
                       event_id)
         try:
             cur.execute(insert_query, parameters)
-            comment_id += 1
         except MySQLdb.IntegrityError:
             print("Skipping duplicate Comment entry: " + str(comment_id))
 
@@ -269,7 +274,7 @@ def populate_db():
         # We don't mind holding the connection open during parsing of Json files
         # since this is a one-time operation (in production code that runs on
         # the web-server we wouldn't do that, since that might create a bottleneck).
-        con = MySQLdb.connect(database_hostname, 'DbMysql08', 'DbMysql08', 'DbMysql08')
+        con = MySQLdb.connect(database_hostname, 'DbMysql08', 'DbMysql08', 'DbMysql08', charset='utf8')
         with con:
             cur = con.cursor(MySQLdb.cursors.DictCursor)
 
@@ -387,7 +392,6 @@ def populate_db():
                     location_street = None
                     location_zipcode = None
 
-                comment_id = None
                 comment_msg = None
                 comment_time = None
                 comments_data = None
@@ -399,17 +403,18 @@ def populate_db():
                             for comment in comments_data['data']:
                                 if 'message' not in comment:
                                     continue  # Ignore comments with no text for our purpose
-                                comment_id = comment['id']  # Comment id, unique for each comment
+
+                                # Facebook's comment id is a string, we want ids to be integers so we
+                                # generate our own sequential ids for comments.
+                                comment_id = len(comments)  # Comment id, unique for each comment
                                 comment_msg = comment['message']  # Comment message data
                                 comment_time = comment['updated_time']  # Comment update time
-
-                                if (comment_id not in comments) and (comment_id is not None):
-                                    comments[comment_id] = (comment_msg, comment_time, event_id)
+                                comments[comment_id] = (comment_msg, comment_time, event_id)
                 except:
                     pass  # Silently ignore, some events have no comment files
 
                 # Country codes are no longer retrieved by facebook.
-                # We have to generate an ide of our own instead..
+                # We have to generate an id of our own instead..
                 if (location_country not in countries) and (location_country is not None):
                     country_id = len(countries)
                     countries[location_country] = country_id
@@ -419,14 +424,16 @@ def populate_db():
                 # ids in the database. In reality, the moment we're done populating the database, these names are
                 # no longer keys and users may add additional streets with similar names (but not the
                 # same ids).
-                street_key = (location_country_code, location_city_id, location_street)
-                if (street_key not in streets) and (location_country_code is not None) \
-                        and (location_city_id is not None) and (location_street is not None):
+                country_id = countries[location_country] if location_country in countries else -1
+                if (location_city not in cities) and (location_city is not None):
+                    city_id = len(cities)
+                    cities[location_city] = (city_id, country_id)
+
+                city_id = cities[location_city] if location_city in cities else -1
+                street_key = (country_id, city_id, location_street)
+                if (street_key not in streets) and (location_street is not None):
                     street_id = len(streets)
                     streets[street_key] = (street_id, location_street)  # Assign sequential ids
-
-                if (location_city_id not in cities) and (location_city_id is not None):
-                    cities[location_city_id] = (location_city, location_country_code)
 
                 if (place_id not in places) and (place_id is not None):
                     is_key_valid = (location_country_code is not None) \
@@ -472,9 +479,9 @@ def populate_db():
             # ================================================================
 
             try:
-                populate_comments(cur, con, comments)
+                populate_events(cur, con, events)
             except Exception as err:
-                print('Error populating comment entities')
+                print('Error populating event entities')
                 tb = traceback.format_exc()
                 print(tb)
 
