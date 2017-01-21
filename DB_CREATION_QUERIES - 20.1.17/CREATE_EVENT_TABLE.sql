@@ -13,14 +13,11 @@ CREATE TABLE Event (
 	event_type VARCHAR(12)  DEFAULT NULL,
 	PRIMARY KEY (id),
 	FOREIGN KEY (category_id)
-		REFERENCES Category(id)
+		REFERENCES Category(id),
 	FOREIGN KEY (owner_id)
-		REFERENCES Owner(id)
+		REFERENCES Owner(id),
 	FOREIGN KEY (place_id)
 		REFERENCES Place(id)
-	FOREIGN KEY (timezone_id)
-		REFERENCES Timezone(id)
-
 )
 COLLATE='utf8_general_ci'
 ENGINE=MyISAM
