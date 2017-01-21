@@ -1,8 +1,8 @@
 SELECT Place.id, Place.name, Country.name, City.name, Street.name
 FROM Place,Country,City,Street,(SELECT Place2.id AS PlaceID, COUNT(Event.id) AS NumberOfEvents
-											FROM Place AS Place2,Event,(SELECT Category1.id AS CategoryID, SUM(Event1.attending_count) AS Num_Of_Attendings
-																					FROM Event AS Event1 ,Category AS Category1
-																					WHERE Event1.category_id=Category1.id
+											FROM Place AS Place2,Event,(SELECT Category1.id AS CategoryID, SUM(EventTime1.attending_count) AS Num_Of_Attendings
+																					FROM Event AS Event1 ,Category AS Category1, Event_Time AS EventTime1
+																					WHERE Event1.category_id=Category1.id and Event.id=EventTime1.event_id
 																					GROUP BY Category1.id
 																					ORDER BY Num_Of_Attendings DESC
 																					LIMIT 1) AS Category_With_Highest_Att
